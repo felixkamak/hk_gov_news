@@ -1,0 +1,28 @@
+# Secrets
+.env
+.env.local
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+
+# Scraper outputs and logs
+logs/
+*.log
+output/*
+!output/.gitkeep
+social_media_scraper/output/*
+!social_media_scraper/output/.gitkeep
+social_media_scraper/logs/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
