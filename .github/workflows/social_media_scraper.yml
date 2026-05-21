@@ -1,0 +1,37 @@
+name: Social Media Content Scraper
+
+on:
+  schedule:
+    - cron: '0 12 * * 1,3,5'  # Mon/Wed/Fri 8pm HKT (UTC+8 = UTC 12:00)
+  workflow_dispatch:  # Keep manual trigger for testing
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          cd social_media_scraper
+          pip install -r requirements.txt
+
+      - name: Run social media scraper
+        run: |
+          cd social_media_scraper
+          python main.py
+
+      - name: Commit output to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add social_media_scraper/output/
+          git diff --staged --quiet || git commit -m "Auto: social media scraper $(date '+%Y-%m-%d')"
+          git push
