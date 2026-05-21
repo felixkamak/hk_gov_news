@@ -20,7 +20,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd social_media_scraper
           pip install -r requirements.txt
 
       - name: Run social media scraper
