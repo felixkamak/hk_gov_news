@@ -17,8 +17,10 @@ logs/
 *.log
 output/*
 !output/.gitkeep
+!output/social_media_triggers.json          
 social_media_scraper/output/*
 !social_media_scraper/output/.gitkeep
+!social_media_scraper/output/social_media_triggers.json  
 social_media_scraper/logs/
 
 # IDE / OS
