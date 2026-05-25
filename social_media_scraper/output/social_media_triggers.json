@@ -1,0 +1,147 @@
+{
+  "generated_date": "2026-05-25",
+  "has_content": true,
+  "content_suggestion": "A類：時效資訊帖",
+  "summary": {
+    "job_openings": 10,
+    "exam_updates": 1,
+    "announcements": 1,
+    "urgent_items": 2
+  },
+  "triggers": {
+    "job_openings": [
+      {
+        "title": "海關督察",
+        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50001&languageType=1",
+        "published_date": "2026-05-21",
+        "summary": "職位: 海關督察; 部門: 香港海關; 職位編號: 50001; 薪酬: 港幣每月48335元; 截止: 2026-06-10",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job"
+      },
+      {
+        "title": "消防隊長（行動）",
+        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=49746&languageType=1",
+        "published_date": "2026-02-01",
+        "summary": "職位: 消防隊長（行動）; 部門: 消防處; 職位編號: 49746; 薪酬: 港幣每月48335元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job"
+      },
+      {
+        "title": "入境事務助理員",
+        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50015&languageType=1",
+        "published_date": "2026-05-01",
+        "summary": "職位: 入境事務助理員; 部門: 入境事務處; 職位編號: 50015; 薪酬: 港幣每月25115元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job"
+      },
+      {
+        "title": "助理文書主任",
+        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=49833&languageType=1",
+        "published_date": "2026-03-05",
+        "summary": "職位: 助理文書主任; 部門: 政府各局及部門; 職位編號: 49833; 薪酬: 港幣每月17200元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job"
+      },
+      {
+        "title": "文書助理",
+        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=49834&languageType=1",
+        "published_date": "2026-03-05",
+        "summary": "職位: 文書助理; 部門: 政府各局及部門; 職位編號: 49834; 薪酬: 港幣每月15180元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job"
+      },
+      {
+        "title": "二級私人秘書",
+        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=49835&languageType=1",
+        "published_date": "2026-03-05",
+        "summary": "職位: 二級私人秘書; 部門: 政府各局及部門; 職位編號: 49835; 薪酬: 港幣每月18305元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job"
+      },
+      {
+        "title": "合約漁農督察",
+        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=49981&languageType=1",
+        "published_date": "2026-05-15",
+        "summary": "職位: 合約漁農督察; 部門: 漁農自然護理署; 職位編號: 49981; 薪酬: 港幣每月20050元; 截止: 2026-05-29",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job"
+      },
+      {
+        "title": "合約農林督察",
+        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=49980&languageType=1",
+        "published_date": "2026-05-15",
+        "summary": "職位: 合約農林督察; 部門: 漁農自然護理署; 職位編號: 49980; 薪酬: 港幣每月20050元; 截止: 2026-05-29",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job"
+      },
+      {
+        "title": "入境事務主任",
+        "url": "https://www.immd.gov.hk/hkt/recruitment",
+        "published_date": "",
+        "summary": "入境事務主任",
+        "source_name": "入境事務處",
+        "source_url": "https://www.immd.gov.hk/hkt/recruitment",
+        "content_type": "job"
+      },
+      {
+        "title": "綜合招聘考試",
+        "url": "https://www.csb.gov.hk/tc_chi/recruit/cre/949.html",
+        "published_date": "",
+        "summary": "(a) (i) 持有本港大學頒授的學士學位，或具同等學歷 [註三] ；及符合語文能力要求，即在 綜合招聘考試 兩張語文試卷(中文運用和英文運用) 考獲「一級」或以上成績 [註四及五] ，或具同等成績(入職月薪：港幣50,990元)；或",
+        "source_name": "入境事務處",
+        "source_url": "https://www.immd.gov.hk/hkt/recruitment",
+        "content_type": "job"
+      }
+    ],
+    "exam_updates": [
+      {
+        "title": "舉行考試日期",
+        "url": "https://www.csb.gov.hk/tc_chi/recruit/2934.html",
+        "published_date": "",
+        "summary": "舉行考試日期 | 將於本學年或下一學年獲取大學學位（不包括副學士學位）的合資格申請人",
+        "source_name": "公務員事務局",
+        "source_url": "https://www.csb.gov.hk/tc_chi/recruit/2934.html",
+        "content_type": "exam"
+      }
+    ],
+    "announcements": [
+      {
+        "title": "招聘資料",
+        "url": "https://www.customs.gov.hk/tc/about-us/recruitment-information/index.html",
+        "published_date": "",
+        "summary": "有關進行中的招聘進度，請瀏覽 招聘資料 。",
+        "source_name": "香港海關",
+        "source_url": "https://www.customs.gov.hk/tc/customs-announcement/job-opportunities/",
+        "content_type": "job"
+      }
+    ],
+    "urgent_items": [
+      {
+        "title": "入境事務助理員",
+        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50015&languageType=1",
+        "published_date": "2026-05-01",
+        "summary": "職位: 入境事務助理員; 部門: 入境事務處; 職位編號: 50015; 薪酬: 港幣每月25115元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job"
+      },
+      {
+        "title": "助理文書主任",
+        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=49833&languageType=1",
+        "published_date": "2026-03-05",
+        "summary": "職位: 助理文書主任; 部門: 政府各局及部門; 職位編號: 49833; 薪酬: 港幣每月17200元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job"
+      }
+    ]
+  }
+}
