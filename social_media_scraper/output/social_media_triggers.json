@@ -1,9 +1,9 @@
 {
-  "generated_date": "2026-05-28",
+  "generated_date": "2026-05-31",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
-    "job_openings": 10,
+    "job_openings": 8,
     "exam_updates": 1,
     "announcements": 1,
     "urgent_items": 2
@@ -30,9 +30,9 @@
       },
       {
         "title": "入境事務助理員",
-        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50015&languageType=1",
-        "published_date": "2026-05-01",
-        "summary": "職位: 入境事務助理員; 部門: 入境事務處; 職位編號: 50015; 薪酬: 港幣每月25115元; 截止: 全年接受申請",
+        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50066&languageType=1",
+        "published_date": "2026-06-01",
+        "summary": "職位: 入境事務助理員; 部門: 入境事務處; 職位編號: 50066; 薪酬: 港幣每月25115元; 截止: 全年接受申請",
         "source_name": "公務員事務局",
         "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
         "content_type": "job"
@@ -60,24 +60,6 @@
         "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=49835&languageType=1",
         "published_date": "2026-03-05",
         "summary": "職位: 二級私人秘書; 部門: 政府各局及部門; 職位編號: 49835; 薪酬: 港幣每月18305元; 截止: 全年接受申請",
-        "source_name": "公務員事務局",
-        "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
-        "content_type": "job"
-      },
-      {
-        "title": "合約漁農督察",
-        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=49981&languageType=1",
-        "published_date": "2026-05-15",
-        "summary": "職位: 合約漁農督察; 部門: 漁農自然護理署; 職位編號: 49981; 薪酬: 港幣每月20050元; 截止: 2026-05-29",
-        "source_name": "公務員事務局",
-        "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
-        "content_type": "job"
-      },
-      {
-        "title": "合約農林督察",
-        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=49980&languageType=1",
-        "published_date": "2026-05-15",
-        "summary": "職位: 合約農林督察; 部門: 漁農自然護理署; 職位編號: 49980; 薪酬: 港幣每月20050元; 截止: 2026-05-29",
         "source_name": "公務員事務局",
         "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
         "content_type": "job"
@@ -126,9 +108,9 @@
     "urgent_items": [
       {
         "title": "入境事務助理員",
-        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50015&languageType=1",
-        "published_date": "2026-05-01",
-        "summary": "職位: 入境事務助理員; 部門: 入境事務處; 職位編號: 50015; 薪酬: 港幣每月25115元; 截止: 全年接受申請",
+        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50066&languageType=1",
+        "published_date": "2026-06-01",
+        "summary": "職位: 入境事務助理員; 部門: 入境事務處; 職位編號: 50066; 薪酬: 港幣每月25115元; 截止: 全年接受申請",
         "source_name": "公務員事務局",
         "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
         "content_type": "job"
