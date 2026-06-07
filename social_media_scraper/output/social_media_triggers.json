@@ -1,15 +1,24 @@
 {
-  "generated_date": "2026-06-04",
+  "generated_date": "2026-06-07",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
-    "job_openings": 8,
+    "job_openings": 9,
     "exam_updates": 1,
     "announcements": 1,
     "urgent_items": 2
   },
   "triggers": {
     "job_openings": [
+      {
+        "title": "助理工程督察",
+        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50067&languageType=1",
+        "published_date": "2026-06-05",
+        "summary": "職位: 助理工程督察; 部門: 漁農自然護理署; 職位編號: 50067; 薪酬: 港幣每月31795元; 截止: 2026-06-19",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job"
+      },
       {
         "title": "海關督察",
         "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50001&languageType=1",
