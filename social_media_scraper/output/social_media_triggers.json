@@ -1,9 +1,9 @@
 {
-  "generated_date": "2026-06-14",
+  "generated_date": "2026-06-16",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
-    "job_openings": 9,
+    "job_openings": 10,
     "exam_updates": 1,
     "announcements": 1,
     "urgent_items": 2
@@ -24,6 +24,15 @@
         "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50103&languageType=1",
         "published_date": "2026-06-13",
         "summary": "職位: 二級懲教助理; 部門: 懲教署; 職位編號: 50103; 薪酬: 港幣每月24070元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job"
+      },
+      {
+        "title": "消防員（行動／海務）",
+        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50106&languageType=1",
+        "published_date": "2026-06-16",
+        "summary": "職位: 消防員（行動／海務）; 部門: 消防處; 職位編號: 50106; 薪酬: 港幣每月25470元; 截止: 2026-06-29",
         "source_name": "公務員事務局",
         "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
         "content_type": "job"
