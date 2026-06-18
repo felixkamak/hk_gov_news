@@ -1,10 +1,10 @@
 {
-  "generated_date": "2026-06-16",
+  "generated_date": "2026-06-18",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
     "job_openings": 10,
-    "exam_updates": 1,
+    "exam_updates": 2,
     "announcements": 1,
     "urgent_items": 2
   },
@@ -102,6 +102,15 @@
       }
     ],
     "exam_updates": [
+      {
+        "title": "csbcseu@csb.gov.hk",
+        "url": "mailto:csbcseu@csb.gov.hk",
+        "published_date": "2026-06-18",
+        "summary": "惡劣天氣下的考試安排 由於天文台早前發出黑色暴雨警告信號，原定 今日（2026年6月18日）所有下午時段 舉行的數碼化「基本法及香港國安法測試」（學位／專業程度職系） 已全部取消 。 公務員考試組（下稱考試組）已為受影響的考生重新編配考試時段，並以 電郵 通知。未能按照獲重新編配的考試時段出席的考生",
+        "source_name": "公務員事務局",
+        "source_url": "https://www.csb.gov.hk/tc_chi/recruit/2934.html",
+        "content_type": "exam"
+      },
       {
         "title": "舉行考試日期",
         "url": "https://www.csb.gov.hk/tc_chi/recruit/2934.html",
