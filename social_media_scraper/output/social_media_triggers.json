@@ -1,9 +1,9 @@
 {
-  "generated_date": "2026-07-07",
+  "generated_date": "2026-07-09",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
-    "job_openings": 9,
+    "job_openings": 10,
     "exam_updates": 2,
     "announcements": 1,
     "urgent_items": 2
@@ -47,6 +47,15 @@
         "content_type": "job"
       },
       {
+        "title": "入境事務主任",
+        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50148&languageType=1",
+        "published_date": "2026-07-09",
+        "summary": "職位: 入境事務主任; 部門: 入境事務處; 職位編號: 50148; 薪酬: 港幣每月46630元; 截止: 2026-07-29",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job"
+      },
+      {
         "title": "助理文書主任",
         "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50098&languageType=1",
         "published_date": "2026-06-12",
@@ -74,10 +83,10 @@
         "content_type": "job"
       },
       {
-        "title": "入境事務主任",
+        "title": "入境事務主任(申請日期 : 2026年7月9日至2026年7月29日)",
         "url": "https://www.immd.gov.hk/hkt/recruitment",
         "published_date": "",
-        "summary": "入境事務主任",
+        "summary": "入境事務主任(申請日期 : 2026年7月9日至2026年7月29日)",
         "source_name": "入境事務處",
         "source_url": "https://www.immd.gov.hk/hkt/recruitment",
         "content_type": "job"
@@ -86,7 +95,7 @@
         "title": "綜合招聘考試",
         "url": "https://www.csb.gov.hk/tc_chi/recruit/cre/949.html",
         "published_date": "",
-        "summary": "(a) (i) 持有本港大學頒授的學士學位，或具同等學歷 [註三] ；及符合語文能力要求，即在 綜合招聘考試 兩張語文試卷(中文運用和英文運用) 考獲「一級」或以上成績 [註四及五] ，或具同等成績(入職月薪：港幣50,990元)；或",
+        "summary": "(a) (i) 持有本港大學頒授的學士學位，或具同等學歷 [註三] ；及符合語文能力要求，即在 綜合招聘考試 兩張語文試卷(中文運用和英文運用) 考獲「一級」或以上成績 [註四及五] ，或具同等成績(入職月薪：港幣52,010元)；或",
         "source_name": "入境事務處",
         "source_url": "https://www.immd.gov.hk/hkt/recruitment",
         "content_type": "job"
