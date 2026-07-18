@@ -42,7 +42,6 @@ TARGET_TITLES = [
     "消防",
     "警務",
     "督察",
-    "綜合招聘考試",
 ]
 
 DATE_HEADER_MARKERS = ("日/月/年", "日 / 月 / 年", "DD/MM/YYYY")

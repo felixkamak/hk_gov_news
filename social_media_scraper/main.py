@@ -16,7 +16,7 @@ if str(_PKG_ROOT) not in sys.path:
 from collectors.announcements_collector import AnnouncementsCollector  # noqa: E402
 from collectors.base_collector import setup_logging  # noqa: E402
 from collectors.jobs_collector import JobsCollector, TARGET_TITLES  # noqa: E402
-from config import ANNOUNCEMENT_SOURCES, JOB_SOURCES, OUTPUT_DIR, URGENT_KEYWORDS  # noqa: E402
+from config import ANNOUNCEMENT_SOURCES, JOB_SOURCES, OUTPUT_DIR  # noqa: E402
 
 
 logger = logging.getLogger(__name__)
@@ -43,7 +43,7 @@ def main() -> None:
         f"jobs={payload['summary']['job_openings']} "
         f"exams={payload['summary']['exam_updates']} "
         f"announcements={payload['summary']['announcements']} "
-        f"urgent={payload['summary']['urgent_items']} "
+        f"urgent={payload['summary']['urgent_count']} "
         f"-> {output_path}"
     )
     logger.info("Wrote %s", output_path)
@@ -92,24 +92,16 @@ def dedupe_by_url(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 
 def categorise_items(items: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
-    """Split items into job_openings, exam_updates, announcements, and urgent_items."""
+    """Split items into job_openings, exam_updates, and announcements."""
     buckets: dict[str, list[dict[str, Any]]] = {
         "job_openings": [],
         "exam_updates": [],
         "announcements": [],
-        "urgent_items": [],
     }
 
     for item in items:
         text = f"{item.get('title', '')} {item.get('summary', '')}"
         trigger = to_trigger(item)
-
-        if (
-            item.get("is_urgent")
-            or item.get("preclassified_priority") == "urgent"
-            or any(keyword in text for keyword in URGENT_KEYWORDS)
-        ):
-            buckets["urgent_items"].append(trigger)
 
         is_job = any(keyword in text for keyword in JOB_KEYWORDS) or item.get("content_type") == "job"
         if is_job and matches_target_job(item.get("title", "")):
@@ -131,12 +123,29 @@ def to_trigger(item: dict[str, Any]) -> dict[str, Any]:
         "source_name": item.get("source_name", ""),
         "source_url": item.get("source_url", ""),
         "content_type": item.get("content_type", ""),
+        "closing_date": item.get("closing_date", ""),
+        "salary": item.get("salary", ""),
+        "department": item.get("department", ""),
+        "is_urgent": bool(item.get("is_urgent") or item.get("preclassified_priority") == "urgent"),
     }
 
 
 def build_output(buckets: dict[str, list[dict[str, Any]]]) -> dict[str, Any]:
-    summary = {key: len(buckets[key]) for key in ("job_openings", "exam_updates", "announcements", "urgent_items")}
-    has_content = any(summary.values())
+    urgent_count = sum(
+        1
+        for items in buckets.values()
+        for item in items
+        if item.get("is_urgent")
+    )
+    summary = {
+        "job_openings": len(buckets["job_openings"]),
+        "exam_updates": len(buckets["exam_updates"]),
+        "announcements": len(buckets["announcements"]),
+        "urgent_count": urgent_count,
+    }
+    has_content = any(
+        summary[key] for key in ("job_openings", "exam_updates", "announcements")
+    )
     content_suggestion = pick_content_suggestion(buckets)
 
     return {
@@ -149,7 +158,10 @@ def build_output(buckets: dict[str, list[dict[str, Any]]]) -> dict[str, Any]:
 
 
 def pick_content_suggestion(buckets: dict[str, list[dict[str, Any]]]) -> str:
-    if buckets["job_openings"] or buckets["urgent_items"]:
+    any_urgent = any(
+        item.get("is_urgent") for items in buckets.values() for item in items
+    )
+    if buckets["job_openings"] or any_urgent:
         return "A類：時效資訊帖"
     if buckets["exam_updates"]:
         return "A類：考試資訊帖"

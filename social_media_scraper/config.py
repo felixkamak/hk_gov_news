@@ -27,16 +27,6 @@ JOB_SOURCES = [
         "source_name": "公務員事務局",
         "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
     },
-    {
-        "name": "IMMD Recruitment",
-        "source_name": "入境事務處",
-        "url": "https://www.immd.gov.hk/hkt/recruitment",
-    },
-    {
-        "name": "Customs Job Opportunities",
-        "source_name": "香港海關",
-        "url": "https://www.customs.gov.hk/tc/customs-announcement/job-opportunities/",
-    },
 ]
 
 ANNOUNCEMENT_SOURCES = [
