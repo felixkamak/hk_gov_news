@@ -45,9 +45,4 @@ ANNOUNCEMENT_SOURCES = [
         "source_name": "公務員事務局",
         "url": "https://www.csb.gov.hk/tc_chi/recruit/2934.html",
     },
-    {
-        "name": "CSB CRE/BLNST on CSBOA",
-        "source_name": "公務員事務局",
-        "url": "https://csboa2.csb.gov.hk/csboa/",
-    },
 ]

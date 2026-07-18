@@ -4,7 +4,7 @@
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
     "job_openings": 8,
-    "exam_updates": 3,
+    "exam_updates": 2,
     "announcements": 0,
     "urgent_count": 2
   },
@@ -117,40 +117,27 @@
     ],
     "exam_updates": [
       {
-        "title": "考試模式",
+        "title": "綜合招聘考試（下一輪）報名",
         "url": "https://www.csb.gov.hk/tc_chi/recruit/cre/949.html",
         "published_date": "",
-        "summary": "考試模式 | 備戰攻略 | 考試攻略 | 考試後續",
+        "summary": "下一次綜合招聘考試暫定 2026-10-03；申請日期 2026-07-25 至 2026-08-07。",
         "source_name": "公務員事務局",
         "source_url": "https://www.csb.gov.hk/tc_chi/recruit/cre/949.html",
         "content_type": "exam",
-        "closing_date": "",
+        "closing_date": "2026-08-07",
         "salary": "",
         "department": "",
         "is_urgent": false
       },
       {
-        "title": "csbcseu@csb.gov.hk",
-        "url": "mailto:csbcseu@csb.gov.hk",
-        "published_date": "",
-        "summary": "惡劣天氣下的考試安排 一般而言，如香港天文台發出三號或以下熱帶氣旋警告信號、「黃色」或「紅色」暴雨警告信號時，數碼化測試會如期舉行。 如香港天文台發出八號預警（即八號熱帶氣旋警告信號將於兩小時內發出）、八號或以上熱帶氣旋警告信號或「黑色」暴雨警告信號，或政府公布「極端情況」，數碼化測試將有以下安排：",
-        "source_name": "公務員事務局",
-        "source_url": "https://www.csb.gov.hk/tc_chi/recruit/2934.html",
-        "content_type": "exam",
-        "closing_date": "",
-        "salary": "",
-        "department": "",
-        "is_urgent": false
-      },
-      {
-        "title": "舉行考試日期",
+        "title": "數碼化基本法及香港國安法測試（全年）",
         "url": "https://www.csb.gov.hk/tc_chi/recruit/2934.html",
         "published_date": "",
-        "summary": "舉行考試日期 | 將於本學年或下一學年獲取大學學位（不包括副學士學位）的合資格申請人",
+        "summary": "數碼化「基本法及香港國安法測試」全年逢星期一至五於稅務大樓舉行，先到先得，可預約未來八星期內時段。",
         "source_name": "公務員事務局",
         "source_url": "https://www.csb.gov.hk/tc_chi/recruit/2934.html",
         "content_type": "exam",
-        "closing_date": "",
+        "closing_date": "全年接受申請",
         "salary": "",
         "department": "",
         "is_urgent": false
