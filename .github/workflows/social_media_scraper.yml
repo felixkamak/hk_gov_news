@@ -27,6 +27,11 @@ jobs:
           cd social_media_scraper
           python main.py
 
+      - name: Generate visual assets
+        run: |
+          cd social_media_scraper
+          python image_generator.py
+
       - name: Commit output to repo
         run: |
           git config user.name "github-actions[bot]"

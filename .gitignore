@@ -22,6 +22,12 @@ social_media_scraper/output/*
 !social_media_scraper/output/.gitkeep
 !social_media_scraper/output/social_media_triggers.json  
 social_media_scraper/logs/
+newsletter/output/*
+!newsletter/output/.gitkeep
+newsletter_v2/output/*
+!newsletter_v2/output/.gitkeep
+newsletter_v2/logs/*
+!newsletter_v2/logs/.gitkeep
 
 # IDE / OS
 .idea/

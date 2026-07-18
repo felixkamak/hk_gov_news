@@ -10,7 +10,9 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from collectors.article_fetcher import enrich_articles_with_full_text
 from collectors.base_collector import setup_logging
+from collectors.immd_news_collector import ImmdNewsCollector
 from collectors.jobs_collector import JobsCollector
 from collectors.page_collector import PageCollector
 from collectors.rss_collector import RSSCollector
@@ -32,12 +34,13 @@ def main() -> None:
         previous_by_id = load_previous_articles()
         articles = normalize_and_dedupe(scraped, previous_by_id)
         classify_new_articles(articles, previous_by_id)
-        all_path, urgent_path = save_outputs(articles)
+        enrich_articles_with_full_text(articles)
+        all_path, urgent_path, dated_all_path = save_outputs(articles)
 
         urgent_count = sum(1 for item in articles if item["priority"] == "urgent")
         elapsed = int(time.time() - started)
         print(f"{urgent_count} urgent items | {len(articles)} total items | {elapsed} seconds")
-        logger.info("Saved %s and %s", all_path, urgent_path)
+        logger.info("Saved %s, %s, and %s", all_path, urgent_path, dated_all_path)
         logger.info("Total runtime: %s seconds", elapsed)
     except Exception as exc:
         # The scheduler should get a clean process exit even if an unexpected edge case appears.
@@ -52,7 +55,11 @@ def run_collectors() -> list[dict[str, Any]]:
     collector_specs: list[tuple[type, dict[str, Any]]] = []
 
     collector_specs.extend((RSSCollector, source) for source in RSS_FEEDS)
-    collector_specs.extend((PageCollector, source) for source in HTML_PAGES)
+    for source in HTML_PAGES:
+        if source.get("kind") == "immd_press":
+            collector_specs.append((ImmdNewsCollector, source))
+        else:
+            collector_specs.append((PageCollector, source))
     collector_specs.append((JobsCollector, JOB_SOURCE))
 
     for collector_cls, source in collector_specs:
@@ -69,9 +76,12 @@ def run_collectors() -> list[dict[str, Any]]:
 
 
 def load_previous_articles() -> dict[str, dict[str, Any]]:
-    """Load the latest all_news files so existing classifications can be reused."""
+    """Load prior outputs so classifications and full_text can be reused."""
     previous: dict[str, dict[str, Any]] = {}
-    for path in sorted(OUTPUT_DIR.glob("all_news_*.json")):
+    paths = sorted(OUTPUT_DIR.glob("all_news_*.json"))
+    paths.extend(sorted(OUTPUT_DIR.glob("*/all_news.json")))
+
+    for path in paths:
         try:
             with path.open("r", encoding="utf-8") as fh:
                 data = json.load(fh)
@@ -105,6 +115,7 @@ def normalize_and_dedupe(
         seen.add(article_id)
 
         previous = previous_by_id.get(article_id, {})
+        preclassified_department = clean_text(str(raw.get("department_tag") or ""))
         articles.append(
             {
                 "id": article_id,
@@ -115,11 +126,12 @@ def normalize_and_dedupe(
                 "source_name": clean_text(str(raw.get("source_name") or "")),
                 "source_url": str(raw.get("source_url") or ""),
                 "summary": clean_text(str(raw.get("summary") or ""))[:150],
-                "department_tag": previous.get("department_tag", ""),
+                "department_tag": previous.get("department_tag") or preclassified_department,
                 "priority": previous.get("priority", raw.get("preclassified_priority", "")),
                 "category": previous.get("category", ""),
                 "ai_summary_tc": previous.get("ai_summary_tc", ""),
-                "_needs_classification": article_id not in previous_by_id,
+                "full_text": previous.get("full_text", ""),
+                "_needs_classification": article_id not in previous_by_id and not preclassified_department,
                 "_preclassified_priority": raw.get("preclassified_priority", ""),
             }
         )
@@ -146,7 +158,6 @@ def classify_new_articles(
         article["department_tag"] = classification["department_tag"]
         article["priority"] = classification["priority"]
         article["category"] = classification["category"]
-        article["ai_summary_tc"] = classification["summary_tc"]
 
     # Ensure any malformed or missing fields are still valid before saving.
     for article in articles:
@@ -157,21 +168,46 @@ def classify_new_articles(
         article.pop("_preclassified_priority", None)
 
 
-def save_outputs(articles: list[dict[str, Any]]) -> tuple[Path, Path]:
-    """Save all records and urgent-only records for today's run."""
+def save_outputs(articles: list[dict[str, Any]]) -> tuple[Path, Path, Path]:
+    """Save legacy flat outputs and today's dated folder outputs."""
     today = datetime.now().strftime("%Y-%m-%d")
     all_path = OUTPUT_DIR / f"all_news_{today}.json"
     urgent_path = OUTPUT_DIR / f"urgent_{today}.json"
+    dated_dir = OUTPUT_DIR / today
+    dated_all_path = dated_dir / "all_news.json"
+    dated_urgent_path = dated_dir / "urgent.json"
+    articles_dir = dated_dir / "articles"
 
     cleaned = [strip_internal_fields(article) for article in articles]
     urgent = [article for article in cleaned if article["priority"] == "urgent"]
+    legacy_cleaned = [article_without_full_text(article) for article in cleaned]
+    legacy_urgent = [article for article in legacy_cleaned if article["priority"] == "urgent"]
 
     with all_path.open("w", encoding="utf-8") as fh:
-        json.dump(cleaned, fh, ensure_ascii=False, indent=2)
+        json.dump(legacy_cleaned, fh, ensure_ascii=False, indent=2)
     with urgent_path.open("w", encoding="utf-8") as fh:
+        json.dump(legacy_urgent, fh, ensure_ascii=False, indent=2)
+
+    dated_dir.mkdir(parents=True, exist_ok=True)
+    articles_dir.mkdir(parents=True, exist_ok=True)
+
+    with dated_all_path.open("w", encoding="utf-8") as fh:
+        json.dump(cleaned, fh, ensure_ascii=False, indent=2)
+    with dated_urgent_path.open("w", encoding="utf-8") as fh:
         json.dump(urgent, fh, ensure_ascii=False, indent=2)
 
-    return all_path, urgent_path
+    for article in cleaned:
+        article_id = str(article.get("id") or "")
+        if not article_id:
+            continue
+        text_path = articles_dir / f"{article_id}.txt"
+        text_path.write_text(str(article.get("full_text") or ""), encoding="utf-8")
+
+    return all_path, urgent_path, dated_all_path
+
+
+def article_without_full_text(article: dict[str, Any]) -> dict[str, Any]:
+    return {key: value for key, value in article.items() if key != "full_text"}
 
 
 def strip_internal_fields(article: dict[str, Any]) -> dict[str, Any]:
