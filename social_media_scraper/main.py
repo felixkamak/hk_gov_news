@@ -30,12 +30,15 @@ def main() -> None:
     setup_logging()
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+    output_path = OUTPUT_DIR / "social_media_triggers.json"
+    previous = load_previous_output(output_path)
+
     raw_items = run_collectors()
     items = dedupe_by_url(raw_items)
     buckets = categorise_items(items)
     payload = build_output(buckets)
+    payload = apply_job_carry_forward(payload, previous)
 
-    output_path = OUTPUT_DIR / "social_media_triggers.json"
     with output_path.open("w", encoding="utf-8") as fh:
         json.dump(payload, fh, ensure_ascii=False, indent=2)
 
@@ -47,6 +50,76 @@ def main() -> None:
         f"-> {output_path}"
     )
     logger.info("Wrote %s", output_path)
+
+
+def load_previous_output(path: Path) -> dict[str, Any]:
+    """Load existing triggers JSON; empty dict if missing or unparseable."""
+    try:
+        with path.open(encoding="utf-8") as fh:
+            data = json.load(fh)
+        if isinstance(data, dict):
+            return data
+    except (OSError, json.JSONDecodeError, TypeError, ValueError):
+        logger.info("No usable previous output at %s", path)
+    return {}
+
+
+def apply_job_carry_forward(
+    payload: dict[str, Any], previous: dict[str, Any]
+) -> dict[str, Any]:
+    """Keep last good job_openings when this run scraped zero jobs."""
+    today = datetime.now().strftime("%Y-%m-%d")
+    triggers = payload.setdefault("triggers", {})
+    new_jobs = triggers.get("job_openings") or []
+    prev_jobs = (previous.get("triggers") or {}).get("job_openings") or []
+    jobs_ok = bool(new_jobs)
+
+    if jobs_ok:
+        payload["jobs_fresh"] = True
+        payload["jobs_last_updated"] = today
+    elif prev_jobs:
+        triggers["job_openings"] = list(prev_jobs)
+        payload["jobs_fresh"] = False
+        payload["jobs_last_updated"] = (
+            previous.get("jobs_last_updated")
+            or previous.get("generated_date")
+            or today
+        )
+        logger.warning(
+            "Empty job scrape; carried forward %s previous job_openings (last updated %s)",
+            len(prev_jobs),
+            payload["jobs_last_updated"],
+        )
+    else:
+        payload["jobs_fresh"] = False
+        payload["jobs_last_updated"] = (
+            previous.get("jobs_last_updated")
+            or previous.get("generated_date")
+            or today
+        )
+
+    buckets = triggers
+    payload["summary"] = build_summary(buckets)
+    payload["has_content"] = any(
+        payload["summary"][key] for key in ("job_openings", "exam_updates", "announcements")
+    )
+    payload["content_suggestion"] = pick_content_suggestion(buckets)
+    return payload
+
+
+def build_summary(buckets: dict[str, list[dict[str, Any]]]) -> dict[str, int]:
+    urgent_count = sum(
+        1
+        for items in buckets.values()
+        for item in items
+        if item.get("is_urgent")
+    )
+    return {
+        "job_openings": len(buckets.get("job_openings") or []),
+        "exam_updates": len(buckets.get("exam_updates") or []),
+        "announcements": len(buckets.get("announcements") or []),
+        "urgent_count": urgent_count,
+    }
 
 
 def run_collectors() -> list[dict[str, Any]]:
@@ -131,18 +204,7 @@ def to_trigger(item: dict[str, Any]) -> dict[str, Any]:
 
 
 def build_output(buckets: dict[str, list[dict[str, Any]]]) -> dict[str, Any]:
-    urgent_count = sum(
-        1
-        for items in buckets.values()
-        for item in items
-        if item.get("is_urgent")
-    )
-    summary = {
-        "job_openings": len(buckets["job_openings"]),
-        "exam_updates": len(buckets["exam_updates"]),
-        "announcements": len(buckets["announcements"]),
-        "urgent_count": urgent_count,
-    }
+    summary = build_summary(buckets)
     has_content = any(
         summary[key] for key in ("job_openings", "exam_updates", "announcements")
     )

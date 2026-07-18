@@ -1,15 +1,120 @@
 {
   "generated_date": "2026-07-18",
   "has_content": true,
-  "content_suggestion": "A類：考試資訊帖",
+  "content_suggestion": "A類：時效資訊帖",
   "summary": {
-    "job_openings": 0,
+    "job_openings": 8,
     "exam_updates": 3,
     "announcements": 0,
-    "urgent_count": 0
+    "urgent_count": 2
   },
   "triggers": {
-    "job_openings": [],
+    "job_openings": [
+      {
+        "title": "二級懲教助理",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50139&languageType=1",
+        "published_date": "2026-07-10",
+        "summary": "職位: 二級懲教助理; 部門: 懲教署; 職位編號: 50139; 薪酬: 港幣每月24555元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "全年接受申請",
+        "salary": "港幣每月24555元",
+        "department": "懲教署",
+        "is_urgent": false
+      },
+      {
+        "title": "懲教主任",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50107&languageType=1",
+        "published_date": "2026-06-22",
+        "summary": "職位: 懲教主任; 部門: 懲教署; 職位編號: 50107; 薪酬: 港幣每月43135元; 截止: 2026-07-19",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "2026-07-19",
+        "salary": "港幣每月43135元",
+        "department": "懲教署",
+        "is_urgent": false
+      },
+      {
+        "title": "消防隊長（行動）",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50130&languageType=1",
+        "published_date": "2026-07-01",
+        "summary": "職位: 消防隊長（行動）; 部門: 消防處; 職位編號: 50130; 薪酬: 港幣每月49300元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "全年接受申請",
+        "salary": "港幣每月49300元",
+        "department": "消防處",
+        "is_urgent": false
+      },
+      {
+        "title": "入境事務助理員",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50076&languageType=1",
+        "published_date": "2026-07-01",
+        "summary": "職位: 入境事務助理員; 部門: 入境事務處; 職位編號: 50076; 薪酬: 港幣每月25620元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "全年接受申請",
+        "salary": "港幣每月25620元",
+        "department": "入境事務處",
+        "is_urgent": true
+      },
+      {
+        "title": "入境事務主任",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50148&languageType=1",
+        "published_date": "2026-07-09",
+        "summary": "職位: 入境事務主任; 部門: 入境事務處; 職位編號: 50148; 薪酬: 港幣每月46630元; 截止: 2026-07-29",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "2026-07-29",
+        "salary": "港幣每月46630元",
+        "department": "入境事務處",
+        "is_urgent": false
+      },
+      {
+        "title": "助理文書主任",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50098&languageType=1",
+        "published_date": "2026-06-12",
+        "summary": "職位: 助理文書主任; 部門: 政府各局及部門; 職位編號: 50098; 薪酬: 港幣每月17200元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "全年接受申請",
+        "salary": "港幣每月17200元",
+        "department": "政府各局及部門",
+        "is_urgent": true
+      },
+      {
+        "title": "文書助理",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50099&languageType=1",
+        "published_date": "2026-06-12",
+        "summary": "職位: 文書助理; 部門: 政府各局及部門; 職位編號: 50099; 薪酬: 港幣每月15180元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "全年接受申請",
+        "salary": "港幣每月15180元",
+        "department": "政府各局及部門",
+        "is_urgent": false
+      },
+      {
+        "title": "二級私人秘書",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50100&languageType=1",
+        "published_date": "2026-06-12",
+        "summary": "職位: 二級私人秘書; 部門: 政府各局及部門; 職位編號: 50100; 薪酬: 港幣每月18305元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "全年接受申請",
+        "salary": "港幣每月18305元",
+        "department": "政府各局及部門",
+        "is_urgent": false
+      }
+    ],
     "exam_updates": [
       {
         "title": "考試模式",
@@ -52,5 +157,7 @@
       }
     ],
     "announcements": []
-  }
+  },
+  "jobs_fresh": false,
+  "jobs_last_updated": "2026-07-18"
 }

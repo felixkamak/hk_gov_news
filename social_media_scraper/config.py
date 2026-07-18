@@ -25,7 +25,12 @@ JOB_SOURCES = [
     {
         "name": "CSB Job Vacancy System",
         "source_name": "公務員事務局",
-        "url": "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        # Primary + mirrors: try in order until one yields parseable jobs.
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "urls": [
+            "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+            "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        ],
     },
 ]
 

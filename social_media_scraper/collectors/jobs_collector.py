@@ -13,7 +13,13 @@ from bs4 import BeautifulSoup, Tag
 from collectors.base_collector import BaseCollector
 from config import POLITE_DELAY_SECONDS, REQUEST_RETRIES, REQUEST_TIMEOUT, URGENT_KEYWORDS
 
-CSB_JOB_LIST_URL = "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1"
+CSB_JOB_LIST_URL = "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1"
+CSB_JOB_LIST_URLS = [
+    "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+    "https://csboa2.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+]
+# Fail fast on a dead mirror (Errno 101 / SSL) then try the next host.
+CSB_CONNECT_TIMEOUT = 5
 
 TITLE_BLOCKLIST = {
     "職位名稱",
@@ -58,24 +64,61 @@ class JobsCollector(BaseCollector):
         return self._dedupe(items)
 
     def _is_csb_job_system(self) -> bool:
-        url = str(self.source.get("url", "")).lower()
-        return "csboa2.csb.gov.hk" in url and "jve" in url
+        for url in self._csb_candidate_urls():
+            lowered = url.lower()
+            if "csboa" in lowered and "csb.gov.hk" in lowered and "jve" in lowered:
+                return True
+        return False
+
+    def _csb_candidate_urls(self) -> list[str]:
+        urls = self.source.get("urls")
+        if isinstance(urls, list) and urls:
+            return [str(u) for u in urls if u]
+        primary = self.source.get("url") or CSB_JOB_LIST_URL
+        # Prefer configured primary; fall back to the known mirror list.
+        ordered = [str(primary)]
+        for url in CSB_JOB_LIST_URLS:
+            if url not in ordered:
+                ordered.append(url)
+        return ordered
 
     def _parse_csb_job_system(self) -> list[dict[str, Any]]:
-        html = self._load_csb_job_list_html()
-        if not html:
-            return []
+        """Try each JVE mirror in order; return jobs from the first that parses."""
+        for url in self._csb_candidate_urls():
+            try:
+                self.logger.info("Trying CSB JVE host: %s", url)
+                html = self._load_csb_job_list_html(url)
+                if not html:
+                    self.logger.warning("CSB JVE host yielded no HTML: %s", url)
+                    continue
 
-        soup = BeautifulSoup(html, "lxml")
-        items = self._parse_csb_table_rows(soup)
-        if not items:
-            items = self._parse_csb_mega_row(soup)
+                soup = BeautifulSoup(html, "lxml")
+                items = self._parse_csb_table_rows(soup, base_url=url)
+                if not items:
+                    items = self._parse_csb_mega_row(soup, base_url=url)
 
-        return [item for item in items if self._matches_target_title(item.get("title", ""))]
+                if not items:
+                    self.logger.warning("CSB JVE host had HTML but 0 parseable jobs: %s", url)
+                    continue
 
-    def _load_csb_job_list_html(self) -> str:
+                matched = [
+                    item for item in items if self._matches_target_title(item.get("title", ""))
+                ]
+                self.logger.info(
+                    "CSB JVE host %s parsed %s jobs (%s target matches)",
+                    url,
+                    len(items),
+                    len(matched),
+                )
+                return matched
+            except Exception as exc:
+                self.logger.warning("CSB JVE host failed, trying next: %s (%s)", url, exc)
+                continue
+
+        return []
+
+    def _load_csb_job_list_html(self, url: str) -> str:
         """Fetch the job list, submitting notice-page continue forms when needed."""
-        url = self.source.get("url", CSB_JOB_LIST_URL)
         time.sleep(POLITE_DELAY_SECONDS)
 
         for _ in range(4):
@@ -95,10 +138,13 @@ class JobsCollector(BaseCollector):
 
         return html
 
+    def _csb_timeout(self) -> tuple[int, int]:
+        return (CSB_CONNECT_TIMEOUT, REQUEST_TIMEOUT)
+
     def _session_get(self, url: str) -> requests.Response | None:
         for attempt in range(1, REQUEST_RETRIES + 1):
             try:
-                response = self.session.get(url, timeout=REQUEST_TIMEOUT)
+                response = self.session.get(url, timeout=self._csb_timeout())
                 self.logger.info(
                     "GET %s -> HTTP %s (attempt %s/%s)",
                     url,
@@ -127,6 +173,7 @@ class JobsCollector(BaseCollector):
 
     def _submit_notice_continue(self, soup: BeautifulSoup, page_url: str) -> requests.Response | None:
         """POST or GET the maintenance/important-notice continue action."""
+        timeout = self._csb_timeout()
         for form in soup.find_all("form"):
             submit_control = self._find_continue_control(form)
             if submit_control is None:
@@ -138,9 +185,9 @@ class JobsCollector(BaseCollector):
 
             try:
                 if method == "post":
-                    response = self.session.post(action, data=payload, timeout=REQUEST_TIMEOUT)
+                    response = self.session.post(action, data=payload, timeout=timeout)
                 else:
-                    response = self.session.get(action, params=payload, timeout=REQUEST_TIMEOUT)
+                    response = self.session.get(action, params=payload, timeout=timeout)
                 self.logger.info("Notice continue %s -> HTTP %s", action, response.status_code)
                 response.raise_for_status()
                 return response
@@ -153,7 +200,7 @@ class JobsCollector(BaseCollector):
                 continue
             href = urljoin(page_url, link["href"])
             try:
-                response = self.session.get(href, timeout=REQUEST_TIMEOUT)
+                response = self.session.get(href, timeout=timeout)
                 self.logger.info("Notice continue link %s -> HTTP %s", href, response.status_code)
                 response.raise_for_status()
                 return response
@@ -194,23 +241,27 @@ class JobsCollector(BaseCollector):
             payload[submit_name] = submit_control.get("value", "")
         return payload
 
-    def _parse_csb_table_rows(self, soup: BeautifulSoup) -> list[dict[str, Any]]:
-        base_url = self.source.get("url", CSB_JOB_LIST_URL)
+    def _parse_csb_table_rows(
+        self, soup: BeautifulSoup, base_url: str | None = None
+    ) -> list[dict[str, Any]]:
+        base = base_url or self.source.get("url", CSB_JOB_LIST_URL)
         items: list[dict[str, Any]] = []
 
         for row in soup.find_all("tr"):
             cells = row.find_all("td")
             if len(cells) < 7:
                 continue
-            item = self._parse_csb_row(cells, base_url)
+            item = self._parse_csb_row(cells, base)
             if item:
                 items.append(item)
 
         return items
 
-    def _parse_csb_mega_row(self, soup: BeautifulSoup) -> list[dict[str, Any]]:
+    def _parse_csb_mega_row(
+        self, soup: BeautifulSoup, base_url: str | None = None
+    ) -> list[dict[str, Any]]:
         """Fallback when all vacancies are rendered inside one wide table row."""
-        base_url = self.source.get("url", CSB_JOB_LIST_URL)
+        base = base_url or self.source.get("url", CSB_JOB_LIST_URL)
         items: list[dict[str, Any]] = []
 
         for row in soup.find_all("tr"):
@@ -223,7 +274,7 @@ class JobsCollector(BaseCollector):
                 chunk = cells[index : index + 8]
                 if len(chunk) < 8:
                     break
-                item = self._parse_csb_row(chunk, base_url)
+                item = self._parse_csb_row(chunk, base)
                 if item:
                     items.append(item)
 
@@ -277,7 +328,7 @@ class JobsCollector(BaseCollector):
             "published_date": published_date,
             "closing_date": closing_date,
             "source_name": self.source.get("source_name", "公務員事務局"),
-            "source_url": CSB_JOB_LIST_URL,
+            "source_url": base_url,
             "content_type": "job",
             "preclassified_priority": priority,
             "summary": summary[:150],
