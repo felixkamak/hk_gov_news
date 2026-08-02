@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-07-30",
+  "generated_date": "2026-08-02",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
@@ -12,9 +12,9 @@
     "job_openings": [
       {
         "title": "二級懲教助理",
-        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50139&languageType=1",
-        "published_date": "2026-07-10",
-        "summary": "職位: 二級懲教助理; 部門: 懲教署; 職位編號: 50139; 薪酬: 港幣每月24555元; 截止: 全年接受申請",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50210&languageType=1",
+        "published_date": "2026-08-01",
+        "summary": "職位: 二級懲教助理; 部門: 懲教署; 職位編號: 50210; 薪酬: 港幣每月24555元; 截止: 全年接受申請",
         "source_name": "公務員事務局",
         "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
         "content_type": "job",
@@ -51,9 +51,9 @@
       },
       {
         "title": "入境事務助理員",
-        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50076&languageType=1",
-        "published_date": "2026-07-01",
-        "summary": "職位: 入境事務助理員; 部門: 入境事務處; 職位編號: 50076; 薪酬: 港幣每月25620元; 截止: 全年接受申請",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50213&languageType=1",
+        "published_date": "2026-08-01",
+        "summary": "職位: 入境事務助理員; 部門: 入境事務處; 職位編號: 50213; 薪酬: 港幣每月25620元; 截止: 全年接受申請",
         "source_name": "公務員事務局",
         "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
         "content_type": "job",
@@ -133,5 +133,5 @@
     "announcements": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-07-30"
+  "jobs_last_updated": "2026-08-02"
 }
