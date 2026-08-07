@@ -1,9 +1,9 @@
 {
-  "generated_date": "2026-08-04",
+  "generated_date": "2026-08-07",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
-    "job_openings": 8,
+    "job_openings": 7,
     "exam_updates": 2,
     "announcements": 0,
     "urgent_count": 3
@@ -21,19 +21,6 @@
         "closing_date": "全年接受申請",
         "salary": "港幣每月24555元",
         "department": "懲教署",
-        "is_urgent": false
-      },
-      {
-        "title": "助理電氣督察",
-        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50171&languageType=1",
-        "published_date": "2026-07-24",
-        "summary": "職位: 助理電氣督察; 部門: 機電工程署; 職位編號: 50171; 薪酬: 港幣每月32430元; 截止: 2026-08-06",
-        "source_name": "公務員事務局",
-        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
-        "content_type": "job",
-        "closing_date": "2026-08-06",
-        "salary": "港幣每月32430元",
-        "department": "機電工程署",
         "is_urgent": false
       },
       {
@@ -146,5 +133,5 @@
     "announcements": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-08-04"
+  "jobs_last_updated": "2026-08-07"
 }
