@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-08-07",
+  "generated_date": "2026-08-09",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
@@ -107,11 +107,11 @@
         "title": "綜合招聘考試（下一輪）報名",
         "url": "https://www.csb.gov.hk/tc_chi/recruit/cre/949.html",
         "published_date": "",
-        "summary": "下一次綜合招聘考試暫定 2026-10-03；申請日期 2026-07-25 至 2026-08-07。",
+        "summary": "下一次綜合招聘考試暫定 2026-10-03；申請日期 2026-09-12 至 2026-10-02。",
         "source_name": "公務員事務局",
         "source_url": "https://www.csb.gov.hk/tc_chi/recruit/cre/949.html",
         "content_type": "exam",
-        "closing_date": "2026-08-07",
+        "closing_date": "2026-10-02",
         "salary": "",
         "department": "",
         "is_urgent": false
@@ -133,5 +133,5 @@
     "announcements": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-08-07"
+  "jobs_last_updated": "2026-08-09"
 }
