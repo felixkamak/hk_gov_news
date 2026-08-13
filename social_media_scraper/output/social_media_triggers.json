@@ -1,9 +1,9 @@
 {
-  "generated_date": "2026-08-11",
+  "generated_date": "2026-08-13",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
-    "job_openings": 6,
+    "job_openings": 8,
     "exam_updates": 2,
     "announcements": 0,
     "urgent_count": 2
@@ -87,6 +87,32 @@
         "salary": "港幣每月18675元",
         "department": "政府各局及部門",
         "is_urgent": false
+      },
+      {
+        "title": "督察助理(屋宇裝備)",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50204&languageType=1",
+        "published_date": "2026-08-13",
+        "summary": "職位: 督察助理(屋宇裝備); 部門: 機電工程署; 職位編號: 50204; 薪酬: 港幣每月32230元; 截止: 2026-08-26",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "2026-08-26",
+        "salary": "港幣每月32230元",
+        "department": "機電工程署",
+        "is_urgent": false
+      },
+      {
+        "title": "督察助理(電子)",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50205&languageType=1",
+        "published_date": "2026-08-13",
+        "summary": "職位: 督察助理(電子); 部門: 機電工程署; 職位編號: 50205; 薪酬: 港幣每月32230元; 截止: 2026-08-26",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "2026-08-26",
+        "salary": "港幣每月32230元",
+        "department": "機電工程署",
+        "is_urgent": false
       }
     ],
     "exam_updates": [
@@ -120,5 +146,5 @@
     "announcements": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-08-11"
+  "jobs_last_updated": "2026-08-13"
 }
