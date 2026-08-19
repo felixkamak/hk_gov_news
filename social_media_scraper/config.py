@@ -83,3 +83,48 @@ POLICY_EXCLUDE_KEYWORDS = [
     "招聘", "請人", "職位空缺", "招考", "聘請", "招募",
     "招聘會", "紅旗", "泳灘", "天氣報告", "空氣質素",
 ]
+
+# ---------------------------------------------------------------------------
+# IO / 入境事務 面試備考主題層
+# ---------------------------------------------------------------------------
+# Fine-grained sub-topics for Immigration Officer (IO) / Immigration Assistant
+# (IA) interview prep. Each item whose title matches any keyword below is
+# tagged category="immigration" with the matching `subtopic`, so IO-relevant
+# policy news can be pulled out of the weekly archive fast.
+#
+# These keywords are ALSO merged into POLICY_ALLOW_KEYWORDS below, so that
+# immigration news actually survives the allowlist gate in the first place
+# (previously most of it was being dropped).
+POLICY_IMMIGRATION_TOPICS = {
+    # 人才政策 -- 高才通 / 優才 / 專才 / 輸入勞工 等
+    "talent": [
+        "高才通", "高端人才", "優才", "專才", "輸入人才", "人才清單",
+        "搶人才", "人才服務", "輸入勞工", "補充勞工", "外勞", "勞工輸入",
+    ],
+    # 執法 / 打擊 -- 非法勞工 / 偷渡 / 免遣返聲請 等
+    "enforcement": [
+        "非法勞工", "非法入境", "非法勞工", "黑工", "偷渡", "蛇頭",
+        "免遣返", "酷刑聲請", "免遣返聲請", "假難民", "逾期逗留",
+        "打擊", "執法行動", "遣返",
+    ],
+    # 邊境 / 口岸 / 通關
+    "border": [
+        "口岸", "通關", "邊境", "出入境", "管制站", "過關", "關口",
+        "自助通道", "e-道",
+    ],
+    # 部門 / 證件 / 服務
+    "dept": [
+        "入境事務處", "入境處", "入境事務", "身份證", "特區護照",
+        "旅行證件", "簽證", "智方便", "單程證", "家庭團聚", "居留權",
+    ],
+}
+
+# Flattened immigration keyword list (dedup, order-preserving).
+POLICY_IMMIGRATION_KEYWORDS = list(
+    dict.fromkeys(kw for kws in POLICY_IMMIGRATION_TOPICS.values() for kw in kws)
+)
+
+# Make sure immigration headlines pass the allowlist gate.
+POLICY_ALLOW_KEYWORDS = list(
+    dict.fromkeys(POLICY_ALLOW_KEYWORDS + POLICY_IMMIGRATION_KEYWORDS)
+)
