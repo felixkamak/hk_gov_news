@@ -15,8 +15,20 @@ if str(_PKG_ROOT) not in sys.path:
 
 from collectors.announcements_collector import AnnouncementsCollector  # noqa: E402
 from collectors.base_collector import setup_logging  # noqa: E402
+from collectors.info_gov_hk_collector import (  # noqa: E402
+    InfoGovHkCollector,
+    build_backfill_sources,
+)
 from collectors.jobs_collector import JobsCollector, TARGET_TITLES  # noqa: E402
-from config import ANNOUNCEMENT_SOURCES, JOB_SOURCES, OUTPUT_DIR  # noqa: E402
+from config import (  # noqa: E402
+    ANNOUNCEMENT_SOURCES,
+    JOB_SOURCES,
+    OUTPUT_DIR,
+    POLICY_BACKFILL_DAYS,
+    POLICY_NEWS_DIR,
+    POLICY_NEWS_IN_MAIN_LIMIT,
+)
+from policy_archive import recent_items, write_weekly_archive  # noqa: E402
 
 
 logger = logging.getLogger(__name__)
@@ -36,6 +48,13 @@ def main() -> None:
     raw_items = run_collectors()
     items = dedupe_by_url(raw_items)
     buckets = categorise_items(items)
+
+    # Policy news is a separate stream (info.gov.hk); it must never be routed
+    # through the job/exam/announcement buckets.
+    policy_items = collect_policy_news()
+    write_weekly_archive(policy_items, POLICY_NEWS_DIR)
+    buckets["policy_news"] = recent_items(policy_items, POLICY_NEWS_IN_MAIN_LIMIT)
+
     payload = build_output(buckets)
     payload = apply_job_carry_forward(payload, previous)
 
@@ -46,6 +65,7 @@ def main() -> None:
         f"jobs={payload['summary']['job_openings']} "
         f"exams={payload['summary']['exam_updates']} "
         f"announcements={payload['summary']['announcements']} "
+        f"policy={payload['summary']['policy_news']} "
         f"urgent={payload['summary']['urgent_count']} "
         f"-> {output_path}"
     )
@@ -101,7 +121,8 @@ def apply_job_carry_forward(
     buckets = triggers
     payload["summary"] = build_summary(buckets)
     payload["has_content"] = any(
-        payload["summary"][key] for key in ("job_openings", "exam_updates", "announcements")
+        payload["summary"][key]
+        for key in ("job_openings", "exam_updates", "announcements", "policy_news")
     )
     payload["content_suggestion"] = pick_content_suggestion(buckets)
     return payload
@@ -118,8 +139,31 @@ def build_summary(buckets: dict[str, list[dict[str, Any]]]) -> dict[str, int]:
         "job_openings": len(buckets.get("job_openings") or []),
         "exam_updates": len(buckets.get("exam_updates") or []),
         "announcements": len(buckets.get("announcements") or []),
+        "policy_news": len(buckets.get("policy_news") or []),
         "urgent_count": urgent_count,
     }
+
+
+def collect_policy_news() -> list[dict[str, Any]]:
+    """Scrape the last POLICY_BACKFILL_DAYS of info.gov.hk, filtered + deduped.
+
+    A 7-day lookback each run guarantees no day is missed between the
+    Mon/Wed/Fri schedule. Relevance filtering happens inside the collector.
+    """
+    collected: list[dict[str, Any]] = []
+    for source in build_backfill_sources(POLICY_BACKFILL_DAYS):
+        try:
+            logger.info("Starting info.gov.hk collector: %s", source["name"])
+            items = InfoGovHkCollector(source).parse()
+            logger.info(
+                "info.gov.hk %s returned %s relevant items", source["name"], len(items)
+            )
+            collected.extend(items)
+        except Exception as exc:  # one bad day never blocks the rest
+            logger.exception(
+                "info.gov.hk collector failed for %s: %s", source.get("name"), exc
+            )
+    return dedupe_by_url(collected)
 
 
 def run_collectors() -> list[dict[str, Any]]:
@@ -170,6 +214,7 @@ def categorise_items(items: list[dict[str, Any]]) -> dict[str, list[dict[str, An
         "job_openings": [],
         "exam_updates": [],
         "announcements": [],
+        "policy_news": [],
     }
 
     for item in items:
@@ -206,7 +251,8 @@ def to_trigger(item: dict[str, Any]) -> dict[str, Any]:
 def build_output(buckets: dict[str, list[dict[str, Any]]]) -> dict[str, Any]:
     summary = build_summary(buckets)
     has_content = any(
-        summary[key] for key in ("job_openings", "exam_updates", "announcements")
+        summary[key]
+        for key in ("job_openings", "exam_updates", "announcements", "policy_news")
     )
     content_suggestion = pick_content_suggestion(buckets)
 
@@ -227,6 +273,8 @@ def pick_content_suggestion(buckets: dict[str, list[dict[str, Any]]]) -> str:
         return "A類：時效資訊帖"
     if buckets["exam_updates"]:
         return "A類：考試資訊帖"
+    if buckets.get("policy_news"):
+        return "A類：政策資訊帖"
     return "C類：互動類帖"
 
 
