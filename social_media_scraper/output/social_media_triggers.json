@@ -6,7 +6,7 @@
     "job_openings": 8,
     "exam_updates": 2,
     "announcements": 0,
-    "policy_news": 9,
+    "policy_news": 12,
     "urgent_count": 2
   },
   "triggers": {
@@ -147,6 +147,18 @@
     "announcements": [],
     "policy_news": [
       {
+        "title": "香港海關「火網」行動打擊跨國販毒活動檢獲超過半億元毒品（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202608/18/P2026081800588.htm",
+        "published_date": "2026-08-18",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/18c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "enforcement",
+        "is_urgent": false
+      },
+      {
         "title": "創新科技及工業局常任秘書長在善德永明耀香港「8.18 河套香港園區 創科加速撐里」的致辭（只有中文）（附圖）",
         "url": "https://www.info.gov.hk/gia/general/202608/18/P2026081800541.htm",
         "published_date": "2026-08-18",
@@ -155,6 +167,7 @@
         "source_url": "https://www.info.gov.hk/gia/general/202608/18c.htm",
         "content_type": "policy_news",
         "category": "civil_service",
+        "subtopic": "",
         "is_urgent": false
       },
       {
@@ -166,6 +179,19 @@
         "source_url": "https://www.info.gov.hk/gia/general/202608/16c.htm",
         "content_type": "policy_news",
         "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "皇崗口岸港方口岸區舉行第二次大型演練和反恐及重大事故演習（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/15/P2026081500573.htm",
+        "published_date": "2026-08-15",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/15c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "border",
         "is_urgent": false
       },
       {
@@ -177,6 +203,7 @@
         "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
         "content_type": "policy_news",
         "category": "policy",
+        "subtopic": "",
         "is_urgent": false
       },
       {
@@ -188,6 +215,7 @@
         "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
         "content_type": "policy_news",
         "category": "policy",
+        "subtopic": "",
         "is_urgent": false
       },
       {
@@ -199,6 +227,7 @@
         "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
         "content_type": "policy_news",
         "category": "civil_service",
+        "subtopic": "",
         "is_urgent": false
       },
       {
@@ -210,6 +239,7 @@
         "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
         "content_type": "policy_news",
         "category": "civil_service",
+        "subtopic": "",
         "is_urgent": false
       },
       {
@@ -221,6 +251,7 @@
         "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
         "content_type": "policy_news",
         "category": "civil_service",
+        "subtopic": "",
         "is_urgent": false
       },
       {
@@ -232,6 +263,19 @@
         "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
         "content_type": "policy_news",
         "category": "security_law",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "皇崗口岸港方口岸區舉行首次大型演練（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/13/P2026081300352.htm",
+        "published_date": "2026-08-13",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/13c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "border",
         "is_urgent": false
       },
       {
@@ -243,6 +287,7 @@
         "source_url": "https://www.info.gov.hk/gia/general/202608/13c.htm",
         "content_type": "policy_news",
         "category": "civil_service",
+        "subtopic": "",
         "is_urgent": false
       }
     ]

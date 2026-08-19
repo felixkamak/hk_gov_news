@@ -3,7 +3,7 @@
   "week_start": "2026-08-10",
   "week_end": "2026-08-16",
   "last_updated": "2026-08-19",
-  "count": 8,
+  "count": 10,
   "items": [
     {
       "title": "行政長官出席第十九屆香港青少年軍事夏令營暨第十三屆香港大學生軍事生活體驗營結業典禮致辭（只有中文）（附圖／短片）",
@@ -14,6 +14,18 @@
       "source_url": "https://www.info.gov.hk/gia/general/202608/16c.htm",
       "content_type": "policy_news",
       "category": "policy",
+      "is_urgent": false
+    },
+    {
+      "title": "皇崗口岸港方口岸區舉行第二次大型演練和反恐及重大事故演習（附圖／短片）",
+      "url": "https://www.info.gov.hk/gia/general/202608/15/P2026081500573.htm",
+      "published_date": "2026-08-15",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/15c.htm",
+      "content_type": "policy_news",
+      "category": "immigration",
+      "subtopic": "border",
       "is_urgent": false
     },
     {
@@ -80,6 +92,18 @@
       "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
       "content_type": "policy_news",
       "category": "security_law",
+      "is_urgent": false
+    },
+    {
+      "title": "皇崗口岸港方口岸區舉行首次大型演練（附圖／短片）",
+      "url": "https://www.info.gov.hk/gia/general/202608/13/P2026081300352.htm",
+      "published_date": "2026-08-13",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/13c.htm",
+      "content_type": "policy_news",
+      "category": "immigration",
+      "subtopic": "border",
       "is_urgent": false
     },
     {
