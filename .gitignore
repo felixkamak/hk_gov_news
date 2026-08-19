@@ -21,6 +21,8 @@ output/*
 social_media_scraper/output/*
 !social_media_scraper/output/.gitkeep
 !social_media_scraper/output/social_media_triggers.json  
+!social_media_scraper/output/policy_news/
+!social_media_scraper/output/policy_news/*.json
 social_media_scraper/logs/
 newsletter/output/*
 !newsletter/output/.gitkeep
