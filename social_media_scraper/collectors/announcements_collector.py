@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+from datetime import date
 from typing import Any
 from urllib.parse import urljoin
 
@@ -20,6 +21,22 @@ _JUNK_TEXT_MARKERS = (
     "參考視頻",
     "參考試題",
     "舉行考試日期",
+)
+
+# Context markers that indicate a NON-Hong-Kong (overseas) exam sitting.
+# Application windows sitting next to these must never be attached to the HK round.
+_OVERSEAS_MARKERS = (
+    "香港以外",
+    "以外地區",
+    "海外",
+    "七個城市",
+    "北京",
+    "上海",
+    "倫敦",
+    "紐約",
+    "多倫多",
+    "溫哥華",
+    "悉尼",
 )
 
 
@@ -78,11 +95,18 @@ class AnnouncementsCollector(BaseCollector):
         text = self._csb_exam_prose(soup)
         exam_date = self._extract_next_cre_exam_date(text)
         app_start, app_end = self._extract_application_window(text)
+        closed = self._hk_application_closed(text)
+
+        # If the HK application window has already closed, never emit a fake
+        # "報名中" window — surface the exam as a prep-stage item instead.
+        if closed:
+            app_start, app_end = "", ""
 
         if not exam_date and not (app_start and app_end):
             return []
 
-        if app_start and app_end:
+        # Open HK application window (future) -> report the window.
+        if app_start and app_end and not closed:
             if exam_date:
                 summary = (
                     f"下一次綜合招聘考試暫定 {exam_date}；"
@@ -101,16 +125,38 @@ class AnnouncementsCollector(BaseCollector):
                 )
             ]
 
+        # Exam date known but application closed (or no valid window) -> prep item.
+        if exam_date and closed:
+            summary = (
+                f"下一次綜合招聘考試暫定 {exam_date}；"
+                f"香港試場報名已結束，考生現處備考階段。"
+            )
+            title = "綜合招聘考試（下一輪）"
+        elif exam_date:
+            summary = f"下一次綜合招聘考試暫定 {exam_date}。"
+            title = "綜合招聘考試（下一輪）"
+        else:
+            return []
+
         return [
             self._make_item(
-                title="綜合招聘考試（下一輪）報名",
+                title=title,
                 url=self.source["url"],
                 published_date="",
-                summary=f"下一次綜合招聘考試暫定 {exam_date}。",
+                summary=summary,
                 closing_date="",
                 content_type="exam",
             )
         ]
+
+    @staticmethod
+    def _hk_application_closed(text: str) -> bool:
+        """True when the page states the HK application period has already ended."""
+        for match in re.finditer(r"申請期已[^。；]{0,40}?完結", text):
+            window = text[max(0, match.start() - 40) : match.end()]
+            if "以外" not in window:  # ignore overseas-round wording
+                return True
+        return False
 
     def _csb_exam_prose(self, soup: BeautifulSoup) -> str:
         """Main-content prose with weather sections and obvious junk stripped."""
@@ -159,19 +205,35 @@ class AnnouncementsCollector(BaseCollector):
         return ""
 
     def _extract_application_window(self, text: str) -> tuple[str, str]:
-        """Parse 申請日期為2026年7月25日至8月7日 (end may omit year)."""
+        """Parse the HK CRE application window (申請日期為2026年7月25日至8月7日).
+
+        Two guards prevent the notorious mis-stitch bug:
+        1. Context filter -- a window sitting next to overseas markers (香港以外,
+           七個城市, 北京 ...) belongs to the year-end overseas sitting, NOT the
+           HK round, so it is skipped.
+        2. Future check -- a window whose end date is already in the past is
+           never surfaced as an open application.
+        """
+        today = date.today()
         for match in re.finditer(
-            r"(?:申請日期|報名)[^。；]{0,30}?(20\d{2})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日\s*至\s*"
+            r"(?:申請日期|報名)[^。；]{0,30}?(20\d{2})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日\s*(?:至|由)?\s*"
             r"(?:(20\d{2})\s*年\s*)?(\d{1,2})\s*月\s*(\d{1,2})\s*日",
             text,
         ):
+            context = text[max(0, match.start() - 50) : match.end() + 5]
+            if any(marker in context for marker in _OVERSEAS_MARKERS):
+                continue
             y1, m1, d1 = match.group(1), match.group(2), match.group(3)
             y2 = match.group(4) or y1
             m2, d2 = match.group(5), match.group(6)
-            return (
-                self._format_cn_date(y1, m1, d1),
-                self._format_cn_date(y2, m2, d2),
-            )
+            start = self._format_cn_date(y1, m1, d1)
+            end = self._format_cn_date(y2, m2, d2)
+            try:
+                if date.fromisoformat(end) < today:
+                    continue
+            except ValueError:
+                continue
+            return start, end
         return "", ""
 
     @staticmethod
