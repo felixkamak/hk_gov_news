@@ -23,6 +23,7 @@ from collectors.base_collector import BaseCollector
 from config import (
     POLICY_ALLOW_KEYWORDS,
     POLICY_EXCLUDE_KEYWORDS,
+    POLICY_IMMIGRATION_TOPICS,
     URGENT_KEYWORDS,
 )
 
@@ -89,7 +90,7 @@ class InfoGovHkCollector(BaseCollector):
                 continue
 
             absolute_url = urljoin(INFO_GOV_HK_BASE, link["href"])
-            category = self._categorise(title)
+            category, subtopic = self._categorise(title)
             urgent = any(keyword in title for keyword in URGENT_KEYWORDS)
             items.append(
                 {
@@ -101,6 +102,7 @@ class InfoGovHkCollector(BaseCollector):
                     "source_url": source_url,
                     "content_type": "policy_news",
                     "category": category,
+                    "subtopic": subtopic,
                     "is_urgent": urgent,
                 }
             )
@@ -120,22 +122,33 @@ class InfoGovHkCollector(BaseCollector):
         return any(good in title for good in POLICY_ALLOW_KEYWORDS)
 
     @staticmethod
-    def _categorise(title: str) -> str:
-        """Coarse tag so downstream content can pick an angle."""
+    def _categorise(title: str) -> tuple[str, str]:
+        """Return (category, subtopic).
+
+        Priority: immigration (IO/IA prep) is checked first and carries a
+        fine-grained subtopic (talent / enforcement / border / dept); then
+        security_law, then civil_service, then generic policy. subtopic is ""
+        for non-immigration items.
+        """
+        # -- immigration first, with sub-topic --
+        for subtopic, keywords in POLICY_IMMIGRATION_TOPICS.items():
+            if any(k in title for k in keywords):
+                return "immigration", subtopic
+
+        security = (
+            "基本法", "國家安全", "國安法", "國安", "一國兩制", "愛國者",
+            "憲法", "人大", "政協", "政制", "選舉", "23條", "二十三條",
+        )
         civil = (
             "公務員", "公職", "編制", "常額", "職系", "首長級", "政務主任",
             "政務官", "行政主任", "薪酬", "薪級", "頂薪", "增薪", "退休金",
             "公積金", "任命", "委任", "出任", "就任", "常任秘書長",
         )
-        security = (
-            "基本法", "國家安全", "國安法", "國安", "一國兩制", "愛國者",
-            "憲法", "人大", "政協", "政制", "選舉",
-        )
-        if any(k in title for k in civil):
-            return "civil_service"
         if any(k in title for k in security):
-            return "security_law"
-        return "policy"
+            return "security_law", ""
+        if any(k in title for k in civil):
+            return "civil_service", ""
+        return "policy", ""
 
     # -- markup handling -----------------------------------------------------
 
