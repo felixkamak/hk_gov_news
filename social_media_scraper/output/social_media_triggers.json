@@ -1,11 +1,12 @@
 {
-  "generated_date": "2026-08-18",
+  "generated_date": "2026-08-19",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
     "job_openings": 8,
     "exam_updates": 2,
     "announcements": 0,
+    "policy_news": 9,
     "urgent_count": 2
   },
   "triggers": {
@@ -117,14 +118,14 @@
     ],
     "exam_updates": [
       {
-        "title": "綜合招聘考試（下一輪）報名",
+        "title": "綜合招聘考試（下一輪）",
         "url": "https://www.csb.gov.hk/tc_chi/recruit/cre/949.html",
         "published_date": "",
-        "summary": "下一次綜合招聘考試暫定 2026-10-03；申請日期 2026-09-12 至 2026-10-02。",
+        "summary": "下一次綜合招聘考試暫定 2026-10-03；香港試場報名已結束，考生現處備考階段。",
         "source_name": "公務員事務局",
         "source_url": "https://www.csb.gov.hk/tc_chi/recruit/cre/949.html",
         "content_type": "exam",
-        "closing_date": "2026-10-02",
+        "closing_date": "",
         "salary": "",
         "department": "",
         "is_urgent": false
@@ -143,8 +144,109 @@
         "is_urgent": false
       }
     ],
-    "announcements": []
+    "announcements": [],
+    "policy_news": [
+      {
+        "title": "創新科技及工業局常任秘書長在善德永明耀香港「8.18 河套香港園區 創科加速撐里」的致辭（只有中文）（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202608/18/P2026081800541.htm",
+        "published_date": "2026-08-18",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/18c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "is_urgent": false
+      },
+      {
+        "title": "行政長官出席第十九屆香港青少年軍事夏令營暨第十三屆香港大學生軍事生活體驗營結業典禮致辭（只有中文）（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/16/P2026081600302.htm",
+        "published_date": "2026-08-16",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/16c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "is_urgent": false
+      },
+      {
+        "title": "行政長官頒授「行政長官表揚榜」獎狀予「處理戰時炸彈跨部門行動及支援組」和「簡約公屋項目跨部門團隊」（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/14/P2026081400270.htm",
+        "published_date": "2026-08-14",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "is_urgent": false
+      },
+      {
+        "title": "行政長官主持「行政長官表揚榜」頒獎典禮致辭（只有中文）（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/14/P2026081400597.htm",
+        "published_date": "2026-08-14",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "is_urgent": false
+      },
+      {
+        "title": "會計及財務匯報局任命執行董事",
+        "url": "https://www.info.gov.hk/gia/general/202608/14/P2026081400305.htm",
+        "published_date": "2026-08-14",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "is_urgent": false
+      },
+      {
+        "title": "政府委任法律援助服務局成員",
+        "url": "https://www.info.gov.hk/gia/general/202608/14/P2026081400264.htm",
+        "published_date": "2026-08-14",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "is_urgent": false
+      },
+      {
+        "title": "政府再度委任保險業監管局行政總監",
+        "url": "https://www.info.gov.hk/gia/general/202608/14/P2026081400291.htm",
+        "published_date": "2026-08-14",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "is_urgent": false
+      },
+      {
+        "title": "政制及內地事務局局長會見傳媒開場發言及答問內容（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/14/P2026081400748.htm",
+        "published_date": "2026-08-14",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
+        "content_type": "policy_news",
+        "category": "security_law",
+        "is_urgent": false
+      },
+      {
+        "title": "創新科技及工業局常任秘書長在善德永明耀香港「8.13 全機場撐里」啓動禮的致辭（只有中文）（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202608/13/P2026081300363.htm",
+        "published_date": "2026-08-13",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/13c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "is_urgent": false
+      }
+    ]
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-08-18"
+  "jobs_last_updated": "2026-08-19"
 }
