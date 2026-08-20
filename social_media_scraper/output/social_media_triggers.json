@@ -1,12 +1,12 @@
 {
-  "generated_date": "2026-08-19",
+  "generated_date": "2026-08-20",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
     "job_openings": 8,
     "exam_updates": 2,
     "announcements": 0,
-    "policy_news": 12,
+    "policy_news": 11,
     "urgent_count": 2
   },
   "triggers": {
@@ -147,6 +147,18 @@
     "announcements": [],
     "policy_news": [
       {
+        "title": "「港深口岸規劃建設工作專班」會議在港舉行（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202608/19/P2026081900473.htm",
+        "published_date": "2026-08-19",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/19c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "border",
+        "is_urgent": false
+      },
+      {
         "title": "香港海關「火網」行動打擊跨國販毒活動檢獲超過半億元毒品（附圖）",
         "url": "https://www.info.gov.hk/gia/general/202608/18/P2026081800588.htm",
         "published_date": "2026-08-18",
@@ -265,33 +277,9 @@
         "category": "security_law",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "皇崗口岸港方口岸區舉行首次大型演練（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202608/13/P2026081300352.htm",
-        "published_date": "2026-08-13",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/13c.htm",
-        "content_type": "policy_news",
-        "category": "immigration",
-        "subtopic": "border",
-        "is_urgent": false
-      },
-      {
-        "title": "創新科技及工業局常任秘書長在善德永明耀香港「8.13 全機場撐里」啓動禮的致辭（只有中文）（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202608/13/P2026081300363.htm",
-        "published_date": "2026-08-13",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/13c.htm",
-        "content_type": "policy_news",
-        "category": "civil_service",
-        "subtopic": "",
-        "is_urgent": false
       }
     ]
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-08-19"
+  "jobs_last_updated": "2026-08-20"
 }
