@@ -1,12 +1,12 @@
 {
-  "generated_date": "2026-08-20",
+  "generated_date": "2026-08-23",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
     "job_openings": 8,
     "exam_updates": 2,
     "announcements": 0,
-    "policy_news": 11,
+    "policy_news": 12,
     "urgent_count": 2
   },
   "triggers": {
@@ -147,6 +147,114 @@
     "announcements": [],
     "policy_news": [
       {
+        "title": "香港特區立法會強烈譴責外部勢力就「支聯會」案的詆毀和抹黑言論",
+        "url": "https://www.info.gov.hk/gia/general/202608/22/P2026082200717.htm",
+        "published_date": "2026-08-22",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/22c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "皇崗口岸舉行萬人壓力測試（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/22/P2026082200325.htm",
+        "published_date": "2026-08-22",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/22c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "border",
+        "is_urgent": false
+      },
+      {
+        "title": "​政務司司長視察新皇崗口岸人流車流壓力測試後會見傳媒談話內容（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/22/P2026082200740.htm",
+        "published_date": "2026-08-22",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/22c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "border",
+        "is_urgent": false
+      },
+      {
+        "title": "鄉郊代表選舉臨時選民登記冊及取消登記名單今日發表",
+        "url": "https://www.info.gov.hk/gia/general/202608/21/P2026082000644.htm",
+        "published_date": "2026-08-21",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/21c.htm",
+        "content_type": "policy_news",
+        "category": "security_law",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "強制性公積金行業計劃委員會任命",
+        "url": "https://www.info.gov.hk/gia/general/202608/21/P2026082100255.htm",
+        "published_date": "2026-08-21",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/21c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "反非法勞工行動拘二十六人",
+        "url": "https://www.info.gov.hk/gia/general/202608/21/P2026082100630.htm",
+        "published_date": "2026-08-21",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/21c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "enforcement",
+        "is_urgent": false
+      },
+      {
+        "title": "​財政司司長出席香港電腦通訊節2026開幕典禮致辭（只有中文）（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/21/P2026082100355.htm",
+        "published_date": "2026-08-21",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/21c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "​立法會秘書處發布「人工智能+：賦能香港　智創未來」的《專題快訊》",
+        "url": "https://www.info.gov.hk/gia/general/202608/21/P2026082100572.htm",
+        "published_date": "2026-08-21",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/21c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "​特區政府為皇崗口岸港方口岸區舉行跨部門桌上演練（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202608/20/P2026082000358.htm",
+        "published_date": "2026-08-20",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/20c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "border",
+        "is_urgent": false
+      },
+      {
         "title": "「港深口岸規劃建設工作專班」會議在港舉行（附圖）",
         "url": "https://www.info.gov.hk/gia/general/202608/19/P2026081900473.htm",
         "published_date": "2026-08-19",
@@ -181,105 +289,9 @@
         "category": "civil_service",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "行政長官出席第十九屆香港青少年軍事夏令營暨第十三屆香港大學生軍事生活體驗營結業典禮致辭（只有中文）（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202608/16/P2026081600302.htm",
-        "published_date": "2026-08-16",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/16c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "皇崗口岸港方口岸區舉行第二次大型演練和反恐及重大事故演習（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202608/15/P2026081500573.htm",
-        "published_date": "2026-08-15",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/15c.htm",
-        "content_type": "policy_news",
-        "category": "immigration",
-        "subtopic": "border",
-        "is_urgent": false
-      },
-      {
-        "title": "行政長官頒授「行政長官表揚榜」獎狀予「處理戰時炸彈跨部門行動及支援組」和「簡約公屋項目跨部門團隊」（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202608/14/P2026081400270.htm",
-        "published_date": "2026-08-14",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "行政長官主持「行政長官表揚榜」頒獎典禮致辭（只有中文）（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202608/14/P2026081400597.htm",
-        "published_date": "2026-08-14",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "會計及財務匯報局任命執行董事",
-        "url": "https://www.info.gov.hk/gia/general/202608/14/P2026081400305.htm",
-        "published_date": "2026-08-14",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
-        "content_type": "policy_news",
-        "category": "civil_service",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "政府委任法律援助服務局成員",
-        "url": "https://www.info.gov.hk/gia/general/202608/14/P2026081400264.htm",
-        "published_date": "2026-08-14",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
-        "content_type": "policy_news",
-        "category": "civil_service",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "政府再度委任保險業監管局行政總監",
-        "url": "https://www.info.gov.hk/gia/general/202608/14/P2026081400291.htm",
-        "published_date": "2026-08-14",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
-        "content_type": "policy_news",
-        "category": "civil_service",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "政制及內地事務局局長會見傳媒開場發言及答問內容（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202608/14/P2026081400748.htm",
-        "published_date": "2026-08-14",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/14c.htm",
-        "content_type": "policy_news",
-        "category": "security_law",
-        "subtopic": "",
-        "is_urgent": false
       }
     ]
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-08-20"
+  "jobs_last_updated": "2026-08-23"
 }
