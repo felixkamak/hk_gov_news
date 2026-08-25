@@ -2,9 +2,21 @@
   "iso_week": "2026-W34",
   "week_start": "2026-08-17",
   "week_end": "2026-08-23",
-  "last_updated": "2026-08-23",
-  "count": 12,
+  "last_updated": "2026-08-25",
+  "count": 13,
   "items": [
+    {
+      "title": "亞太廣播聯盟機械人大賽2026在香港舉行（附圖）",
+      "url": "https://www.info.gov.hk/gia/general/202608/23/P2026082300436.htm",
+      "published_date": "2026-08-23",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/23c.htm",
+      "content_type": "policy_news",
+      "category": "security_law",
+      "subtopic": "",
+      "is_urgent": false
+    },
     {
       "title": "香港特區立法會強烈譴責外部勢力就「支聯會」案的詆毀和抹黑言論",
       "url": "https://www.info.gov.hk/gia/general/202608/22/P2026082200717.htm",

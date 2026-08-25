@@ -1,13 +1,13 @@
 {
-  "generated_date": "2026-08-23",
+  "generated_date": "2026-08-25",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
-    "job_openings": 8,
-    "exam_updates": 2,
+    "job_openings": 9,
+    "exam_updates": 1,
     "announcements": 0,
-    "policy_news": 12,
-    "urgent_count": 2
+    "policy_news": 15,
+    "urgent_count": 3
   },
   "triggers": {
     "job_openings": [
@@ -114,22 +114,22 @@
         "salary": "港幣每月32230元",
         "department": "機電工程署",
         "is_urgent": false
+      },
+      {
+        "title": "合約文員",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50272&languageType=1",
+        "published_date": "2026-08-24",
+        "summary": "職位: 合約文員; 部門: 民政及青年事務局; 職位編號: 50272; 薪酬: 港幣每月17545元; 截止: 2026-09-06",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "2026-09-06",
+        "salary": "港幣每月17545元",
+        "department": "民政及青年事務局",
+        "is_urgent": true
       }
     ],
     "exam_updates": [
-      {
-        "title": "綜合招聘考試（下一輪）",
-        "url": "https://www.csb.gov.hk/tc_chi/recruit/cre/949.html",
-        "published_date": "",
-        "summary": "下一次綜合招聘考試暫定 2026-10-03；香港試場報名已結束，考生現處備考階段。",
-        "source_name": "公務員事務局",
-        "source_url": "https://www.csb.gov.hk/tc_chi/recruit/cre/949.html",
-        "content_type": "exam",
-        "closing_date": "",
-        "salary": "",
-        "department": "",
-        "is_urgent": false
-      },
       {
         "title": "數碼化基本法及香港國安法測試（全年）",
         "url": "https://www.csb.gov.hk/tc_chi/recruit/2934.html",
@@ -146,6 +146,66 @@
     ],
     "announcements": [],
     "policy_news": [
+      {
+        "title": "香港海關打擊航空旅客走私香煙（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202608/24/P2026082400679.htm",
+        "published_date": "2026-08-24",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/24c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "enforcement",
+        "is_urgent": false
+      },
+      {
+        "title": "行政長官出席首屆全球獨角獸大會致辭（只有中文）（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/24/P2026082400259.htm",
+        "published_date": "2026-08-24",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/24c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "行政長官出席慶祝香港回歸祖國二十九周年、香港政協青年聯會成立十二周年暨第七屆執委會就職典禮致辭（只有中文）（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/24/P2026082400713.htm",
+        "published_date": "2026-08-24",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/24c.htm",
+        "content_type": "policy_news",
+        "category": "security_law",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "創新科技及工業局常任秘書長在「得算力、得天下——香港智算產業發展交流會」的致辭（只有中文）（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202608/24/P2026082400333.htm",
+        "published_date": "2026-08-24",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/24c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "亞太廣播聯盟機械人大賽2026在香港舉行（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202608/23/P2026082300436.htm",
+        "published_date": "2026-08-23",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/23c.htm",
+        "content_type": "policy_news",
+        "category": "security_law",
+        "subtopic": "",
+        "is_urgent": false
+      },
       {
         "title": "香港特區立法會強烈譴責外部勢力就「支聯會」案的詆毀和抹黑言論",
         "url": "https://www.info.gov.hk/gia/general/202608/22/P2026082200717.htm",
@@ -265,33 +325,9 @@
         "category": "immigration",
         "subtopic": "border",
         "is_urgent": false
-      },
-      {
-        "title": "香港海關「火網」行動打擊跨國販毒活動檢獲超過半億元毒品（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202608/18/P2026081800588.htm",
-        "published_date": "2026-08-18",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/18c.htm",
-        "content_type": "policy_news",
-        "category": "immigration",
-        "subtopic": "enforcement",
-        "is_urgent": false
-      },
-      {
-        "title": "創新科技及工業局常任秘書長在善德永明耀香港「8.18 河套香港園區 創科加速撐里」的致辭（只有中文）（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202608/18/P2026081800541.htm",
-        "published_date": "2026-08-18",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/18c.htm",
-        "content_type": "policy_news",
-        "category": "civil_service",
-        "subtopic": "",
-        "is_urgent": false
       }
     ]
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-08-23"
+  "jobs_last_updated": "2026-08-25"
 }

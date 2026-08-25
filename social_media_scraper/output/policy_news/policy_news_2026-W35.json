@@ -1,0 +1,57 @@
+{
+  "iso_week": "2026-W35",
+  "week_start": "2026-08-24",
+  "week_end": "2026-08-30",
+  "last_updated": "2026-08-25",
+  "count": 4,
+  "items": [
+    {
+      "title": "香港海關打擊航空旅客走私香煙（附圖）",
+      "url": "https://www.info.gov.hk/gia/general/202608/24/P2026082400679.htm",
+      "published_date": "2026-08-24",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/24c.htm",
+      "content_type": "policy_news",
+      "category": "immigration",
+      "subtopic": "enforcement",
+      "is_urgent": false
+    },
+    {
+      "title": "行政長官出席首屆全球獨角獸大會致辭（只有中文）（附圖／短片）",
+      "url": "https://www.info.gov.hk/gia/general/202608/24/P2026082400259.htm",
+      "published_date": "2026-08-24",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/24c.htm",
+      "content_type": "policy_news",
+      "category": "policy",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "行政長官出席慶祝香港回歸祖國二十九周年、香港政協青年聯會成立十二周年暨第七屆執委會就職典禮致辭（只有中文）（附圖／短片）",
+      "url": "https://www.info.gov.hk/gia/general/202608/24/P2026082400713.htm",
+      "published_date": "2026-08-24",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/24c.htm",
+      "content_type": "policy_news",
+      "category": "security_law",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "創新科技及工業局常任秘書長在「得算力、得天下——香港智算產業發展交流會」的致辭（只有中文）（附圖）",
+      "url": "https://www.info.gov.hk/gia/general/202608/24/P2026082400333.htm",
+      "published_date": "2026-08-24",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/24c.htm",
+      "content_type": "policy_news",
+      "category": "civil_service",
+      "subtopic": "",
+      "is_urgent": false
+    }
+  ]
+}
