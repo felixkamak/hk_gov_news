@@ -39,6 +39,15 @@ _OVERSEAS_MARKERS = (
     "悉尼",
 )
 
+# CSB rewords this page freely (e.g. 暫定於 -> 擬於, 下一次 -> 是次). Match on any
+# of these round markers / lead-in verbs instead of a single hard-coded word, so a
+# harmless rewrite never makes the HK exam item silently vanish again.
+_ROUND_MARKERS = ("下一次", "是次", "另一輪", "本輪", "新一輪", "年終")
+_LEADIN_VERBS = ("暫定於", "擬於", "將於", "定於", "於")
+
+# City list used to positively identify the overseas paragraph.
+_OVERSEAS_CITIES = ("北京", "上海", "倫敦", "紐約", "多倫多", "溫哥華", "悉尼")
+
 
 class AnnouncementsCollector(BaseCollector):
     """Collect exam dates, format changes, and application window announcements."""
@@ -92,7 +101,16 @@ class AnnouncementsCollector(BaseCollector):
         ]
 
     def _parse_cre_exam_page(self, soup: BeautifulSoup) -> list[dict[str, Any]]:
+        """Emit the HK sitting and the overseas sitting as separate, independent items.
+
+        The overseas round is parsed by a dedicated method so the HK mis-stitch
+        guard (which discards overseas application windows) stays intact while the
+        overseas registration window is still surfaced on its own.
+        """
         text = self._csb_exam_prose(soup)
+        return self._parse_hk_cre(text) + self._parse_overseas_cre_sitting(text)
+
+    def _parse_hk_cre(self, text: str) -> list[dict[str, Any]]:
         exam_date = self._extract_next_cre_exam_date(text)
         app_start, app_end = self._extract_application_window(text)
         closed = self._hk_application_closed(text)
@@ -149,6 +167,89 @@ class AnnouncementsCollector(BaseCollector):
             )
         ]
 
+    def _parse_overseas_cre_sitting(self, text: str) -> list[dict[str, Any]]:
+        """Surface the香港以外 (overseas) CRE round as its own item.
+
+        This is the round that matters most to mainland xiaohongshu readers
+        (Beijing / Shanghai centres) and is the one the pipeline used to drop
+        entirely because the HK guard filters out any overseas application window.
+        """
+        # Only proceed if the page actually describes an overseas sitting.
+        if not (any(m in text for m in ("香港以外", "以外地區")) and any(c in text for c in _OVERSEAS_CITIES)):
+            return []
+
+        exam_date = self._extract_overseas_exam_date(text)
+        app_start, app_end = self._extract_overseas_application_window(text)
+        if not exam_date and not (app_start and app_end):
+            return []
+
+        cities = "、".join(c for c in _OVERSEAS_CITIES if c in text)
+        date_part = f"境外場暫定 {exam_date} 舉行" if exam_date else "境外場"
+        if cities:
+            date_part += f"（{cities}）"
+
+        if app_start and app_end:
+            try:
+                window_open = date.fromisoformat(app_end) >= date.today()
+            except ValueError:
+                window_open = True
+            if window_open:
+                summary = f"{date_part}；報名 {app_start} 至 {app_end}。"
+                return [
+                    self._make_item(
+                        title="綜合招聘考試（境外場）報名",
+                        url=self.source["url"],
+                        published_date="",
+                        summary=summary,
+                        closing_date=app_end,
+                        content_type="exam",
+                    )
+                ]
+            summary = f"{date_part}；報名 {app_start} 至 {app_end} 已結束，考生現處備考階段。"
+        else:
+            summary = f"{date_part}。詳情將於稍後公布。"
+
+        return [
+            self._make_item(
+                title="綜合招聘考試（境外場）",
+                url=self.source["url"],
+                published_date="",
+                summary=summary,
+                closing_date=app_end,
+                content_type="exam",
+            )
+        ]
+
+    @staticmethod
+    def _extract_overseas_exam_date(text: str) -> str:
+        """The overseas sitting date: a CRE date directly followed, within the SAME
+        sentence, by an overseas marker AND 舉行 (e.g. "暫定於2026年12月5日在香港以外
+        的七個城市舉行"). Staying inside one sentence prevents a nearby HK-section date
+        (e.g. the 9月21日 email-notice date) from bleeding into the overseas heading."""
+        for match in _CN_DATE.finditer(text):
+            seg = text[match.end() :].split("。")[0][:60]
+            if any(m in seg for m in _OVERSEAS_MARKERS) and "舉行" in seg:
+                return f"{int(match.group(1)):04d}-{int(match.group(2)):02d}-{int(match.group(3)):02d}"
+        return ""
+
+    def _extract_overseas_application_window(self, text: str) -> tuple[str, str]:
+        """The overseas application window: same shape as the HK one, but the
+        overseas-context requirement is INVERTED — we keep only windows that DO
+        sit next to overseas markers (香港以外, 七個城市, 北京 ...)."""
+        for match in re.finditer(
+            r"(?:申請日期|報名)[^。；]{0,30}?(20\d{2})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日\s*(?:至|由)?\s*"
+            r"(?:(20\d{2})\s*年\s*)?(\d{1,2})\s*月\s*(\d{1,2})\s*日",
+            text,
+        ):
+            context = text[max(0, match.start() - 50) : match.end() + 5]
+            if not any(marker in context for marker in _OVERSEAS_MARKERS):
+                continue  # this is the HK window, handled elsewhere
+            y1, m1, d1 = match.group(1), match.group(2), match.group(3)
+            y2 = match.group(4) or y1
+            m2, d2 = match.group(5), match.group(6)
+            return self._format_cn_date(y1, m1, d1), self._format_cn_date(y2, m2, d2)
+        return "", ""
+
     @staticmethod
     def _hk_application_closed(text: str) -> bool:
         """True when the page states the HK application period has already ended."""
@@ -183,24 +284,23 @@ class AnnouncementsCollector(BaseCollector):
         return self._clean_text(text)
 
     def _extract_next_cre_exam_date(self, text: str) -> str:
-        """Prefer the next Hong Kong CRE sitting (暫定 / 下一次), not past rounds."""
-        patterns = [
-            r"下一次綜合招聘考試暫定於\s*" + _CN_DATE.pattern,
-            r"下一次.*?綜合招聘考試.*?暫定於\s*" + _CN_DATE.pattern,
-            r"綜合招聘考試暫定於\s*" + _CN_DATE.pattern,
-        ]
-        for pattern in patterns:
-            match = re.search(pattern, text)
-            if match:
-                return self._format_cn_date(match.group(1), match.group(2), match.group(3))
+        """Return the next Hong Kong CRE sitting date.
 
-        # Nearby context: 下一次 … 2026年10月3日
+        Robust to CSB rewordings: the sitting date is any CRE date whose nearby
+        context (a) mentions 綜合招聘, (b) carries a round marker OR a lead-in verb,
+        and (c) is NOT an overseas sitting. This survives "是次綜合招聘考試擬於
+        2026年10月3日" just as well as the old "下一次…暫定於…" phrasing, while the
+        overseas guard keeps the 12月 境外場 date from being mistaken for the HK one.
+        """
         for match in _CN_DATE.finditer(text):
-            start = max(0, match.start() - 40)
-            window = text[start : match.end() + 10]
-            if "下一次" in window and "綜合招聘" in window:
-                return self._format_cn_date(match.group(1), match.group(2), match.group(3))
-            if "暫定" in window and "綜合招聘" in window and "以外" not in window:
+            window = text[max(0, match.start() - 45) : match.end() + 12]
+            if "綜合招聘" not in window:
+                continue
+            if any(marker in window for marker in _OVERSEAS_MARKERS):
+                continue  # this is the overseas sitting, not the HK one
+            has_round = any(marker in window for marker in _ROUND_MARKERS)
+            has_verb = any(verb in window for verb in _LEADIN_VERBS)
+            if has_round or has_verb:
                 return self._format_cn_date(match.group(1), match.group(2), match.group(3))
         return ""
 
