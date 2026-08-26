@@ -20,13 +20,22 @@ from collectors.info_gov_hk_collector import (  # noqa: E402
     build_backfill_sources,
 )
 from collectors.jobs_collector import JobsCollector, TARGET_TITLES  # noqa: E402
+from collectors.source_monitor import (  # noqa: E402
+    SourceMonitor,
+    build_source_updates,
+    load_snapshot,
+    save_snapshot,
+)
 from config import (  # noqa: E402
     ANNOUNCEMENT_SOURCES,
     JOB_SOURCES,
+    MONITOR_SOURCES,
     OUTPUT_DIR,
     POLICY_BACKFILL_DAYS,
     POLICY_NEWS_DIR,
     POLICY_NEWS_IN_MAIN_LIMIT,
+    SNAPSHOT_FILE,
+    SOURCE_RELEVANCE_KEYWORDS,
 )
 from policy_archive import recent_items, write_weekly_archive  # noqa: E402
 
@@ -55,6 +64,11 @@ def main() -> None:
     write_weekly_archive(policy_items, POLICY_NEWS_DIR)
     buckets["policy_news"] = recent_items(policy_items, POLICY_NEWS_IN_MAIN_LIMIT)
 
+    # Source-change safety net: snapshot every watched CSB page + the recruit
+    # hub link list, diff against last run, and surface any relevant change even
+    # when no bespoke parser covers it.
+    buckets["source_updates"] = collect_source_updates()
+
     payload = build_output(buckets)
     payload = apply_job_carry_forward(payload, previous)
 
@@ -66,6 +80,7 @@ def main() -> None:
         f"exams={payload['summary']['exam_updates']} "
         f"announcements={payload['summary']['announcements']} "
         f"policy={payload['summary']['policy_news']} "
+        f"source_updates={payload['summary'].get('source_updates', 0)} "
         f"urgent={payload['summary']['urgent_count']} "
         f"-> {output_path}"
     )
@@ -140,6 +155,7 @@ def build_summary(buckets: dict[str, list[dict[str, Any]]]) -> dict[str, int]:
         "exam_updates": len(buckets.get("exam_updates") or []),
         "announcements": len(buckets.get("announcements") or []),
         "policy_news": len(buckets.get("policy_news") or []),
+        "source_updates": len(buckets.get("source_updates") or []),
         "urgent_count": urgent_count,
     }
 
@@ -164,6 +180,37 @@ def collect_policy_news() -> list[dict[str, Any]]:
                 "info.gov.hk collector failed for %s: %s", source.get("name"), exc
             )
     return dedupe_by_url(collected)
+
+
+def collect_source_updates() -> list[dict[str, Any]]:
+    """Snapshot watched pages, diff vs the previous snapshot, return relevant changes.
+
+    Pages that fail to fetch this run keep their previous baseline, so a transient
+    error never triggers a false 'removed' or re-baseline flood. Only changes that
+    hit a relevance keyword (or a brand-new sub-page) are returned for the feed.
+    """
+    try:
+        previous = load_snapshot(SNAPSHOT_FILE)
+        hub_url = next((s["url"] for s in MONITOR_SOURCES if s.get("is_hub")), "")
+        current = SourceMonitor(MONITOR_SOURCES, hub_url=hub_url).collect_snapshot()
+
+        # Preserve baselines for any page that failed to fetch this run.
+        for url, page in previous.items():
+            current.setdefault(url, page)
+
+        updates = build_source_updates(previous, current, SOURCE_RELEVANCE_KEYWORDS)
+        save_snapshot(SNAPSHOT_FILE, current, datetime.now().strftime("%Y-%m-%d"))
+
+        relevant = [u for u in updates if u.get("is_relevant")]
+        logger.info(
+            "Source monitor: %s total changes, %s relevant surfaced",
+            len(updates),
+            len(relevant),
+        )
+        return relevant
+    except Exception as exc:  # a monitor failure must never break the main run
+        logger.exception("Source monitor failed: %s", exc)
+        return []
 
 
 def run_collectors() -> list[dict[str, Any]]:
