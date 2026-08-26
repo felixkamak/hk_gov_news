@@ -1,12 +1,13 @@
 {
-  "generated_date": "2026-08-25",
+  "generated_date": "2026-08-26",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
     "job_openings": 9,
-    "exam_updates": 1,
+    "exam_updates": 2,
     "announcements": 0,
-    "policy_news": 15,
+    "policy_news": 22,
+    "source_updates": 0,
     "urgent_count": 3
   },
   "triggers": {
@@ -131,6 +132,19 @@
     ],
     "exam_updates": [
       {
+        "title": "綜合招聘考試（下一輪）",
+        "url": "https://www.csb.gov.hk/tc_chi/recruit/cre/949.html",
+        "published_date": "",
+        "summary": "下一次綜合招聘考試暫定 2026-10-03；香港試場報名已結束，考生現處備考階段。",
+        "source_name": "公務員事務局",
+        "source_url": "https://www.csb.gov.hk/tc_chi/recruit/cre/949.html",
+        "content_type": "exam",
+        "closing_date": "",
+        "salary": "",
+        "department": "",
+        "is_urgent": false
+      },
+      {
         "title": "數碼化基本法及香港國安法測試（全年）",
         "url": "https://www.csb.gov.hk/tc_chi/recruit/2934.html",
         "published_date": "",
@@ -146,6 +160,102 @@
     ],
     "announcements": [],
     "policy_news": [
+      {
+        "title": "行政長官到訪深水埗區就《施政報告》聽取市民意見（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/26/P2026082600420.htm",
+        "published_date": "2026-08-26",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "行政長官九月十六日公布《香港第一個五年規劃》並隨之發表《施政報告》",
+        "url": "https://www.info.gov.hk/gia/general/202608/26/P2026082600405.htm",
+        "published_date": "2026-08-26",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "勞工及福利局局長在《2026年僱員再培訓（修訂）條例草案》委員會會議的開場發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202608/26/P2026082600410.htm",
+        "published_date": "2026-08-26",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "公務員事務局局長與政務職系實習生聚會  實習計劃擴展至所有大學生（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202608/26/P2026082600258.htm",
+        "published_date": "2026-08-26",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "​行政長官到訪深水埗區後會見傳媒談話內容（只有中文）（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/26/P2026082600646.htm",
+        "published_date": "2026-08-26",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "醫務衞生局局長在《2026年醫生註冊（修訂）條例草案》委員會會議的開場發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202608/25/P2026082500509.htm",
+        "published_date": "2026-08-25",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/25c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "特區政府高級公務員公共管理碩士課程學員與北京大學領導聚首交流（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202608/25/P2026082400525.htm",
+        "published_date": "2026-08-25",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/25c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "二○二七年區議會一般選舉區議會地方選區分界及名稱臨時建議公眾諮詢今日展開（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202608/25/P2026082500258.htm",
+        "published_date": "2026-08-25",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/25c.htm",
+        "content_type": "policy_news",
+        "category": "security_law",
+        "subtopic": "",
+        "is_urgent": false
+      },
       {
         "title": "香港海關打擊航空旅客走私香煙（附圖）",
         "url": "https://www.info.gov.hk/gia/general/202608/24/P2026082400679.htm",
@@ -313,21 +423,10 @@
         "category": "immigration",
         "subtopic": "border",
         "is_urgent": false
-      },
-      {
-        "title": "「港深口岸規劃建設工作專班」會議在港舉行（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202608/19/P2026081900473.htm",
-        "published_date": "2026-08-19",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/19c.htm",
-        "content_type": "policy_news",
-        "category": "immigration",
-        "subtopic": "border",
-        "is_urgent": false
       }
-    ]
+    ],
+    "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-08-25"
+  "jobs_last_updated": "2026-08-26"
 }
