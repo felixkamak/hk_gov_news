@@ -48,6 +48,37 @@ ANNOUNCEMENT_SOURCES = [
 ]
 
 # ---------------------------------------------------------------------------
+# Source-change monitor (snapshot + diff safety net)
+# ---------------------------------------------------------------------------
+# Every run snapshots these pages section-by-section and diffs against the
+# previous snapshot, so ANY edit surfaces even when no bespoke parser covers it.
+# The hub (7.html) also has its link list captured, so a brand-new sub-page is
+# detected the moment CSB adds it. Snapshot persists via a committed file.
+SNAPSHOT_FILE = OUTPUT_DIR / "source_snapshots.json"
+
+MONITOR_SOURCES = [
+    # hub — link list watched for brand-new sub-pages
+    {"name": "招聘事宜 (hub)", "url": "https://www.csb.gov.hk/tc_chi/recruit/7.html", "is_hub": True},
+    # exam-core pages (also smart-parsed elsewhere)
+    {"name": "綜合招聘考試 949", "url": "https://www.csb.gov.hk/tc_chi/recruit/cre/949.html"},
+    {"name": "招聘 BLNST 1372", "url": "https://www.csb.gov.hk/tc_chi/recruit/blnst/1372.html"},
+    {"name": "考試事項 335", "url": "https://www.csb.gov.hk/tc_chi/recruit/exammat/335.html"},
+    {"name": "數碼化 BLNST 2934", "url": "https://www.csb.gov.hk/tc_chi/recruit/2934.html"},
+    # watch-only evergreen pages (surfaced only if a change hits a keyword)
+    {"name": "申請手續 330", "url": "https://www.csb.gov.hk/tc_chi/recruit/application/330.html"},
+    {"name": "學歷評核 333", "url": "https://www.csb.gov.hk/tc_chi/recruit/qual/333.html"},
+]
+
+# A section change is promoted to the agent-facing feed only if it mentions one
+# of these; otherwise it is captured in the snapshot but kept quiet (no noise
+# from privacy-statement / boilerplate edits). New sub-pages always surface.
+SOURCE_RELEVANCE_KEYWORDS = [
+    "考試", "報名", "申請日期", "截止", "測試", "開考", "日期", "場次",
+    "基本法", "國安法", "BLNST", "CRE", "綜合招聘", "境外", "以外",
+    "數碼化", "成績", "職位", "空缺", "退休年齡",
+]
+
+# ---------------------------------------------------------------------------
 # info.gov.hk policy-news collection (Option 3: 公務員 + 考試時事)
 # ---------------------------------------------------------------------------
 
