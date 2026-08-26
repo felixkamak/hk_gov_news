@@ -249,17 +249,20 @@ class SourceMonitor(BaseCollector):
         snapshot: dict[str, Any] = {}
         for src in self.monitor_sources:
             url = src["url"]
-            response = self.fetch(url)
-            if response is None:
-                logger.warning("Monitor fetch failed, skipping %s", url)
-                continue
-            html = self._decode(response)
-            snapshot[url] = snapshot_page(html, url, capture_links=src.get("is_hub", False))
+            try:
+                response = self.fetch(url)
+                if response is None:
+                    logger.warning("Monitor fetch failed, skipping %s", url)
+                    continue
+                html = self._decode(response)
+                snapshot[url] = snapshot_page(html, url, capture_links=src.get("is_hub", False))
+            except Exception as exc:  # one bad page must never kill the whole snapshot
+                logger.warning("Monitor could not snapshot %s: %s", url, exc)
         return snapshot
 
     @staticmethod
     def _decode(response: Any) -> str:
-        for encoding in ("utf-8", "big5", "hkscs", response.apparent_encoding or "utf-8"):
+        for encoding in ("utf-8", "big5", "hkscs"):
             try:
                 return response.content.decode(encoding)
             except (UnicodeDecodeError, LookupError):
