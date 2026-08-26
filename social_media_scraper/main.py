@@ -198,9 +198,11 @@ def collect_source_updates() -> list[dict[str, Any]]:
         for url, page in previous.items():
             current.setdefault(url, page)
 
-        updates = build_source_updates(previous, current, SOURCE_RELEVANCE_KEYWORDS)
+        # Persist the snapshot FIRST, so a baseline always survives to the next
+        # run even if diffing below somehow raises.
         save_snapshot(SNAPSHOT_FILE, current, datetime.now().strftime("%Y-%m-%d"))
 
+        updates = build_source_updates(previous, current, SOURCE_RELEVANCE_KEYWORDS)
         relevant = [u for u in updates if u.get("is_relevant")]
         logger.info(
             "Source monitor: %s total changes, %s relevant surfaced",
@@ -244,13 +246,22 @@ def matches_target_job(title: str) -> bool:
 
 
 def dedupe_by_url(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    seen: set[str] = set()
+    """Drop exact duplicates while keeping distinct items that share a URL.
+
+    Some pages legitimately yield more than one item (e.g. 949.html emits both the
+    HK sitting and the overseas sitting), so the key is (url, title) — a true
+    duplicate matches on both, but two different sittings on one page do not.
+    """
+    seen: set[tuple[str, str]] = set()
     unique: list[dict[str, Any]] = []
     for item in items:
         url = str(item.get("url") or "").strip()
-        if not url or url in seen:
+        if not url:
             continue
-        seen.add(url)
+        key = (url, str(item.get("title") or "").strip())
+        if key in seen:
+            continue
+        seen.add(key)
         unique.append(item)
     return unique
 
