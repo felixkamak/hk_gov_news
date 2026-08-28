@@ -2,9 +2,45 @@
   "iso_week": "2026-W35",
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "last_updated": "2026-08-26",
-  "count": 12,
+  "last_updated": "2026-08-28",
+  "count": 15,
   "items": [
+    {
+      "title": "政府委任香港電台顧問委員會成員",
+      "url": "https://www.info.gov.hk/gia/general/202608/28/P2026082800303.htm",
+      "published_date": "2026-08-28",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+      "content_type": "policy_news",
+      "category": "civil_service",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "政府委任香港考試及評核局委員會委員",
+      "url": "https://www.info.gov.hk/gia/general/202608/28/P2026082800200.htm",
+      "published_date": "2026-08-28",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+      "content_type": "policy_news",
+      "category": "civil_service",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "​政府委任交通諮詢委員會成員",
+      "url": "https://www.info.gov.hk/gia/general/202608/28/P2026082800212.htm",
+      "published_date": "2026-08-28",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+      "content_type": "policy_news",
+      "category": "civil_service",
+      "subtopic": "",
+      "is_urgent": false
+    },
     {
       "title": "行政長官到訪深水埗區就《施政報告》聽取市民意見（附圖／短片）",
       "url": "https://www.info.gov.hk/gia/general/202608/26/P2026082600420.htm",

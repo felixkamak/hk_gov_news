@@ -1,12 +1,12 @@
 {
-  "generated_date": "2026-08-26",
+  "generated_date": "2026-08-28",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
-    "job_openings": 9,
+    "job_openings": 7,
     "exam_updates": 2,
     "announcements": 0,
-    "policy_news": 22,
+    "policy_news": 19,
     "source_updates": 0,
     "urgent_count": 3
   },
@@ -91,32 +91,6 @@
         "is_urgent": false
       },
       {
-        "title": "督察助理(屋宇裝備)",
-        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50204&languageType=1",
-        "published_date": "2026-08-13",
-        "summary": "職位: 督察助理(屋宇裝備); 部門: 機電工程署; 職位編號: 50204; 薪酬: 港幣每月32230元; 截止: 2026-08-26",
-        "source_name": "公務員事務局",
-        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
-        "content_type": "job",
-        "closing_date": "2026-08-26",
-        "salary": "港幣每月32230元",
-        "department": "機電工程署",
-        "is_urgent": false
-      },
-      {
-        "title": "督察助理(電子)",
-        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50205&languageType=1",
-        "published_date": "2026-08-13",
-        "summary": "職位: 督察助理(電子); 部門: 機電工程署; 職位編號: 50205; 薪酬: 港幣每月32230元; 截止: 2026-08-26",
-        "source_name": "公務員事務局",
-        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
-        "content_type": "job",
-        "closing_date": "2026-08-26",
-        "salary": "港幣每月32230元",
-        "department": "機電工程署",
-        "is_urgent": false
-      },
-      {
         "title": "合約文員",
         "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50272&languageType=1",
         "published_date": "2026-08-24",
@@ -161,12 +135,48 @@
     "announcements": [],
     "policy_news": [
       {
+        "title": "政府委任香港電台顧問委員會成員",
+        "url": "https://www.info.gov.hk/gia/general/202608/28/P2026082800303.htm",
+        "published_date": "2026-08-28",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "政府委任香港考試及評核局委員會委員",
+        "url": "https://www.info.gov.hk/gia/general/202608/28/P2026082800200.htm",
+        "published_date": "2026-08-28",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "​政府委任交通諮詢委員會成員",
+        "url": "https://www.info.gov.hk/gia/general/202608/28/P2026082800212.htm",
+        "published_date": "2026-08-28",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
         "title": "行政長官到訪深水埗區就《施政報告》聽取市民意見（附圖／短片）",
         "url": "https://www.info.gov.hk/gia/general/202608/26/P2026082600420.htm",
         "published_date": "2026-08-26",
         "summary": "",
         "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/26c.htm",
         "content_type": "policy_news",
         "category": "policy",
         "subtopic": "",
@@ -178,7 +188,7 @@
         "published_date": "2026-08-26",
         "summary": "",
         "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/26c.htm",
         "content_type": "policy_news",
         "category": "policy",
         "subtopic": "",
@@ -190,7 +200,7 @@
         "published_date": "2026-08-26",
         "summary": "",
         "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/26c.htm",
         "content_type": "policy_news",
         "category": "policy",
         "subtopic": "",
@@ -202,7 +212,7 @@
         "published_date": "2026-08-26",
         "summary": "",
         "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/26c.htm",
         "content_type": "policy_news",
         "category": "civil_service",
         "subtopic": "",
@@ -214,7 +224,7 @@
         "published_date": "2026-08-26",
         "summary": "",
         "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/26c.htm",
         "content_type": "policy_news",
         "category": "policy",
         "subtopic": "",
@@ -351,82 +361,10 @@
         "category": "immigration",
         "subtopic": "border",
         "is_urgent": false
-      },
-      {
-        "title": "鄉郊代表選舉臨時選民登記冊及取消登記名單今日發表",
-        "url": "https://www.info.gov.hk/gia/general/202608/21/P2026082000644.htm",
-        "published_date": "2026-08-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/21c.htm",
-        "content_type": "policy_news",
-        "category": "security_law",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "強制性公積金行業計劃委員會任命",
-        "url": "https://www.info.gov.hk/gia/general/202608/21/P2026082100255.htm",
-        "published_date": "2026-08-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/21c.htm",
-        "content_type": "policy_news",
-        "category": "civil_service",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "反非法勞工行動拘二十六人",
-        "url": "https://www.info.gov.hk/gia/general/202608/21/P2026082100630.htm",
-        "published_date": "2026-08-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/21c.htm",
-        "content_type": "policy_news",
-        "category": "immigration",
-        "subtopic": "enforcement",
-        "is_urgent": false
-      },
-      {
-        "title": "​財政司司長出席香港電腦通訊節2026開幕典禮致辭（只有中文）（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202608/21/P2026082100355.htm",
-        "published_date": "2026-08-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/21c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "​立法會秘書處發布「人工智能+：賦能香港　智創未來」的《專題快訊》",
-        "url": "https://www.info.gov.hk/gia/general/202608/21/P2026082100572.htm",
-        "published_date": "2026-08-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/21c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "​特區政府為皇崗口岸港方口岸區舉行跨部門桌上演練（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202608/20/P2026082000358.htm",
-        "published_date": "2026-08-20",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/20c.htm",
-        "content_type": "policy_news",
-        "category": "immigration",
-        "subtopic": "border",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-08-26"
+  "jobs_last_updated": "2026-08-28"
 }
