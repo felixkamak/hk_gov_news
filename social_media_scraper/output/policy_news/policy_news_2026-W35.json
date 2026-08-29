@@ -2,9 +2,45 @@
   "iso_week": "2026-W35",
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "last_updated": "2026-08-28",
-  "count": 15,
+  "last_updated": "2026-08-29",
+  "count": 22,
   "items": [
+    {
+      "title": "律政司歡迎全國人大常委會通過《中華人民共和國律師法》修正草案就大灣區律師作出規定",
+      "url": "https://www.info.gov.hk/gia/general/202608/29/P2026082900016.htm",
+      "published_date": "2026-08-29",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+      "content_type": "policy_news",
+      "category": "security_law",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "非法勞工被判入獄",
+      "url": "https://www.info.gov.hk/gia/general/202608/28/P2026082800685.htm",
+      "published_date": "2026-08-28",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/28c.htm",
+      "content_type": "policy_news",
+      "category": "immigration",
+      "subtopic": "enforcement",
+      "is_urgent": false
+    },
+    {
+      "title": "政府宣布高層官員任命（附圖）",
+      "url": "https://www.info.gov.hk/gia/general/202608/28/P2026082800271.htm",
+      "published_date": "2026-08-28",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/28c.htm",
+      "content_type": "policy_news",
+      "category": "civil_service",
+      "subtopic": "",
+      "is_urgent": false
+    },
     {
       "title": "政府委任香港電台顧問委員會成員",
       "url": "https://www.info.gov.hk/gia/general/202608/28/P2026082800303.htm",
@@ -30,6 +66,42 @@
       "is_urgent": false
     },
     {
+      "title": "政府委任《旅遊業條例》（第634章）下的上訴委員團成員",
+      "url": "https://www.info.gov.hk/gia/general/202608/28/P2026082800272.htm",
+      "published_date": "2026-08-28",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/28c.htm",
+      "content_type": "policy_news",
+      "category": "civil_service",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "反非法勞工行動拘三十八人",
+      "url": "https://www.info.gov.hk/gia/general/202608/28/P2026082800579.htm",
+      "published_date": "2026-08-28",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/28c.htm",
+      "content_type": "policy_news",
+      "category": "immigration",
+      "subtopic": "enforcement",
+      "is_urgent": false
+    },
+    {
+      "title": "入境事務處舉辦2026年度內地與港澳出入境管理部門「1+2」聯繫協作機制會議（附圖）",
+      "url": "https://www.info.gov.hk/gia/general/202608/28/P2026082800764.htm",
+      "published_date": "2026-08-28",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/28c.htm",
+      "content_type": "policy_news",
+      "category": "immigration",
+      "subtopic": "border",
+      "is_urgent": false
+    },
+    {
       "title": "​政府委任交通諮詢委員會成員",
       "url": "https://www.info.gov.hk/gia/general/202608/28/P2026082800212.htm",
       "published_date": "2026-08-28",
@@ -39,6 +111,18 @@
       "content_type": "policy_news",
       "category": "civil_service",
       "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "​妥善控制狗隻特別巡查及執法行動",
+      "url": "https://www.info.gov.hk/gia/general/202608/28/P2026082800691.htm",
+      "published_date": "2026-08-28",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/28c.htm",
+      "content_type": "policy_news",
+      "category": "immigration",
+      "subtopic": "enforcement",
       "is_urgent": false
     },
     {
