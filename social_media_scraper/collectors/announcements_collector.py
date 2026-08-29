@@ -526,11 +526,16 @@ class AnnouncementsCollector(BaseCollector):
 
     @staticmethod
     def _dedupe(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
-        seen: set[str] = set()
+        seen: set[tuple[str, str]] = set()
         unique: list[dict[str, Any]] = []
         for item in items:
-            key = item.get("url") or item.get("title", "")
-            if not key or key in seen:
+            url = str(item.get("url") or "")
+            title = str(item.get("title") or "")
+            # Key on (url, title): one page can legitimately yield several items
+            # (e.g. 949.html emits both the HK sitting and the overseas sitting),
+            # so keying on url alone would silently drop the second one.
+            key = (url, title)
+            if not (url or title) or key in seen:
                 continue
             seen.add(key)
             unique.append(item)
