@@ -2,9 +2,33 @@
   "iso_week": "2026-W35",
   "week_start": "2026-08-24",
   "week_end": "2026-08-30",
-  "last_updated": "2026-08-29",
-  "count": 22,
+  "last_updated": "2026-08-30",
+  "count": 25,
   "items": [
+    {
+      "title": "行政長官出席香港島各界聯合會第十一屆理事會暨香港島各界社會服務基金會第五屆董事會就職典禮致辭（只有中文）（附圖／短片）",
+      "url": "https://www.info.gov.hk/gia/general/202608/29/P2026082900532.htm",
+      "published_date": "2026-08-29",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/29c.htm",
+      "content_type": "policy_news",
+      "category": "policy",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "皇崗口岸舉行第二次跨境大型壓力測試（附圖／短片）",
+      "url": "https://www.info.gov.hk/gia/general/202608/29/P2026082900524.htm",
+      "published_date": "2026-08-29",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/29c.htm",
+      "content_type": "policy_news",
+      "category": "immigration",
+      "subtopic": "border",
+      "is_urgent": false
+    },
     {
       "title": "律政司歡迎全國人大常委會通過《中華人民共和國律師法》修正草案就大灣區律師作出規定",
       "url": "https://www.info.gov.hk/gia/general/202608/29/P2026082900016.htm",
@@ -15,6 +39,18 @@
       "content_type": "policy_news",
       "category": "security_law",
       "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "保安局局長在皇崗口岸大型壓力測試後會見傳媒談話內容（附短片）",
+      "url": "https://www.info.gov.hk/gia/general/202608/29/P2026082900890.htm",
+      "published_date": "2026-08-29",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202608/29c.htm",
+      "content_type": "policy_news",
+      "category": "immigration",
+      "subtopic": "border",
       "is_urgent": false
     },
     {

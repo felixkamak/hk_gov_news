@@ -1,12 +1,12 @@
 {
-  "generated_date": "2026-08-29",
+  "generated_date": "2026-08-30",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
     "job_openings": 7,
     "exam_updates": 3,
     "announcements": 0,
-    "policy_news": 23,
+    "policy_news": 25,
     "source_updates": 0,
     "urgent_count": 3
   },
@@ -148,15 +148,51 @@
     "announcements": [],
     "policy_news": [
       {
+        "title": "行政長官出席香港島各界聯合會第十一屆理事會暨香港島各界社會服務基金會第五屆董事會就職典禮致辭（只有中文）（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/29/P2026082900532.htm",
+        "published_date": "2026-08-29",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/29c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "皇崗口岸舉行第二次跨境大型壓力測試（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/29/P2026082900524.htm",
+        "published_date": "2026-08-29",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/29c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "border",
+        "is_urgent": false
+      },
+      {
         "title": "律政司歡迎全國人大常委會通過《中華人民共和國律師法》修正草案就大灣區律師作出規定",
         "url": "https://www.info.gov.hk/gia/general/202608/29/P2026082900016.htm",
         "published_date": "2026-08-29",
         "summary": "",
         "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/29c.htm",
         "content_type": "policy_news",
         "category": "security_law",
         "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "保安局局長在皇崗口岸大型壓力測試後會見傳媒談話內容（附短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/29/P2026082900890.htm",
+        "published_date": "2026-08-29",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/29c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "border",
         "is_urgent": false
       },
       {
@@ -410,22 +446,10 @@
         "category": "civil_service",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "亞太廣播聯盟機械人大賽2026在香港舉行（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202608/23/P2026082300436.htm",
-        "published_date": "2026-08-23",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/23c.htm",
-        "content_type": "policy_news",
-        "category": "security_law",
-        "subtopic": "",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-08-29"
+  "jobs_last_updated": "2026-08-30"
 }
