@@ -1,12 +1,12 @@
 {
-  "generated_date": "2026-08-30",
+  "generated_date": "2026-09-01",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
     "job_openings": 7,
     "exam_updates": 3,
     "announcements": 0,
-    "policy_news": 25,
+    "policy_news": 23,
     "source_updates": 0,
     "urgent_count": 3
   },
@@ -14,9 +14,9 @@
     "job_openings": [
       {
         "title": "二級懲教助理",
-        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50210&languageType=1",
-        "published_date": "2026-08-01",
-        "summary": "職位: 二級懲教助理; 部門: 懲教署; 職位編號: 50210; 薪酬: 港幣每月24555元; 截止: 全年接受申請",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50284&languageType=1",
+        "published_date": "2026-09-01",
+        "summary": "職位: 二級懲教助理; 部門: 懲教署; 職位編號: 50284; 薪酬: 港幣每月24555元; 截止: 全年接受申請",
         "source_name": "公務員事務局",
         "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
         "content_type": "job",
@@ -40,9 +40,9 @@
       },
       {
         "title": "入境事務助理員",
-        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50213&languageType=1",
-        "published_date": "2026-08-01",
-        "summary": "職位: 入境事務助理員; 部門: 入境事務處; 職位編號: 50213; 薪酬: 港幣每月25620元; 截止: 全年接受申請",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50277&languageType=1",
+        "published_date": "2026-09-01",
+        "summary": "職位: 入境事務助理員; 部門: 入境事務處; 職位編號: 50277; 薪酬: 港幣每月25620元; 截止: 全年接受申請",
         "source_name": "公務員事務局",
         "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
         "content_type": "job",
@@ -147,6 +147,66 @@
     ],
     "announcements": [],
     "policy_news": [
+      {
+        "title": "非法勞工被判入獄",
+        "url": "https://www.info.gov.hk/gia/general/202608/31/P2026083100673.htm",
+        "published_date": "2026-08-31",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/31c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "enforcement",
+        "is_urgent": false
+      },
+      {
+        "title": "財政司司長出席銀河通用Galbot Store香港啟動禮暨機器人巡禮致辭（只有中文）（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202608/31/P2026083100221.htm",
+        "published_date": "2026-08-31",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/31c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "教育局委任家校會主席及成員",
+        "url": "https://www.info.gov.hk/gia/general/202608/31/P2026083100216.htm",
+        "published_date": "2026-08-31",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/31c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "博彩及獎券事務委員會的任命",
+        "url": "https://www.info.gov.hk/gia/general/202608/31/P2026083100264.htm",
+        "published_date": "2026-08-31",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/31c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "創新科技及工業局常任秘書長在廣州出席APEC中小企業能力建設和韌性發展專題研討致辭（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202608/31/P2026083100263.htm",
+        "published_date": "2026-08-31",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/31c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
       {
         "title": "行政長官出席香港島各界聯合會第十一屆理事會暨香港島各界社會服務基金會第五屆董事會就職典禮致辭（只有中文）（附圖／短片）",
         "url": "https://www.info.gov.hk/gia/general/202608/29/P2026082900532.htm",
@@ -362,94 +422,10 @@
         "category": "policy",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "醫務衞生局局長在《2026年醫生註冊（修訂）條例草案》委員會會議的開場發言（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202608/25/P2026082500509.htm",
-        "published_date": "2026-08-25",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/25c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "特區政府高級公務員公共管理碩士課程學員與北京大學領導聚首交流（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202608/25/P2026082400525.htm",
-        "published_date": "2026-08-25",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/25c.htm",
-        "content_type": "policy_news",
-        "category": "civil_service",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "二○二七年區議會一般選舉區議會地方選區分界及名稱臨時建議公眾諮詢今日展開（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202608/25/P2026082500258.htm",
-        "published_date": "2026-08-25",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/25c.htm",
-        "content_type": "policy_news",
-        "category": "security_law",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "香港海關打擊航空旅客走私香煙（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202608/24/P2026082400679.htm",
-        "published_date": "2026-08-24",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/24c.htm",
-        "content_type": "policy_news",
-        "category": "immigration",
-        "subtopic": "enforcement",
-        "is_urgent": false
-      },
-      {
-        "title": "行政長官出席首屆全球獨角獸大會致辭（只有中文）（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202608/24/P2026082400259.htm",
-        "published_date": "2026-08-24",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/24c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "行政長官出席慶祝香港回歸祖國二十九周年、香港政協青年聯會成立十二周年暨第七屆執委會就職典禮致辭（只有中文）（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202608/24/P2026082400713.htm",
-        "published_date": "2026-08-24",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/24c.htm",
-        "content_type": "policy_news",
-        "category": "security_law",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "創新科技及工業局常任秘書長在「得算力、得天下——香港智算產業發展交流會」的致辭（只有中文）（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202608/24/P2026082400333.htm",
-        "published_date": "2026-08-24",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/24c.htm",
-        "content_type": "policy_news",
-        "category": "civil_service",
-        "subtopic": "",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-08-30"
+  "jobs_last_updated": "2026-09-01"
 }
