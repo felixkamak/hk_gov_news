@@ -1,12 +1,12 @@
 {
-  "generated_date": "2026-09-01",
+  "generated_date": "2026-09-03",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
-    "job_openings": 7,
+    "job_openings": 8,
     "exam_updates": 3,
     "announcements": 0,
-    "policy_news": 23,
+    "policy_news": 24,
     "source_updates": 0,
     "urgent_count": 3
   },
@@ -23,6 +23,19 @@
         "closing_date": "全年接受申請",
         "salary": "港幣每月24555元",
         "department": "懲教署",
+        "is_urgent": false
+      },
+      {
+        "title": "消防隊目(食堂督導員)",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50299&languageType=1",
+        "published_date": "2026-09-04",
+        "summary": "職位: 消防隊目(食堂督導員); 部門: 消防處; 職位編號: 50299; 薪酬: 港幣每月38045元; 截止: 2026-09-17",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "2026-09-17",
+        "salary": "港幣每月38045元",
+        "department": "消防處",
         "is_urgent": false
       },
       {
@@ -147,6 +160,78 @@
     ],
     "announcements": [],
     "policy_news": [
+      {
+        "title": "行政長官與教資會成員會面（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202609/02/P2026090200438.htm",
+        "published_date": "2026-09-02",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202609/02c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "立法會交通事務委員會展開北京職務考察（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202609/02/P2026090200739.htm",
+        "published_date": "2026-09-02",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202609/02c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "行政長官出席第20屆亞洲運動會中國香港代表團授旗典禮致辭（只有中文）（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202609/01/P2026090100256.htm",
+        "published_date": "2026-09-01",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202609/01c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "立法會交通事務委員會前往北京進行職務考察",
+        "url": "https://www.info.gov.hk/gia/general/202609/01/P2026090100349.htm",
+        "published_date": "2026-09-01",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202609/01c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "文化體育及旅遊局常任秘書長出席製衣業訓練局「Wear's HK」開幕禮致辭（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202609/01/P2026090100842.htm",
+        "published_date": "2026-09-01",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202609/01c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "政府委任大嶼山發展諮詢委員會委員",
+        "url": "https://www.info.gov.hk/gia/general/202609/01/P2026090100655.htm",
+        "published_date": "2026-09-01",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202609/01c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
       {
         "title": "非法勞工被判入獄",
         "url": "https://www.info.gov.hk/gia/general/202608/31/P2026083100673.htm",
@@ -362,70 +447,10 @@
         "category": "immigration",
         "subtopic": "enforcement",
         "is_urgent": false
-      },
-      {
-        "title": "行政長官到訪深水埗區就《施政報告》聽取市民意見（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202608/26/P2026082600420.htm",
-        "published_date": "2026-08-26",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/26c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "行政長官九月十六日公布《香港第一個五年規劃》並隨之發表《施政報告》",
-        "url": "https://www.info.gov.hk/gia/general/202608/26/P2026082600405.htm",
-        "published_date": "2026-08-26",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/26c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "勞工及福利局局長在《2026年僱員再培訓（修訂）條例草案》委員會會議的開場發言（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202608/26/P2026082600410.htm",
-        "published_date": "2026-08-26",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/26c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "公務員事務局局長與政務職系實習生聚會  實習計劃擴展至所有大學生（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202608/26/P2026082600258.htm",
-        "published_date": "2026-08-26",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/26c.htm",
-        "content_type": "policy_news",
-        "category": "civil_service",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "​行政長官到訪深水埗區後會見傳媒談話內容（只有中文）（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202608/26/P2026082600646.htm",
-        "published_date": "2026-08-26",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/26c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-09-01"
+  "jobs_last_updated": "2026-09-03"
 }
