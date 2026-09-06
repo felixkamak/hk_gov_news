@@ -101,16 +101,20 @@ class JobsCollector(BaseCollector):
                     self.logger.warning("CSB JVE host had HTML but 0 parseable jobs: %s", url)
                     continue
 
-                matched = [
-                    item for item in items if self._matches_target_title(item.get("title", ""))
-                ]
+                # Return ALL parsed government vacancies. The CSB JVE table
+                # contains only genuine job postings (no ads / weather noise),
+                # so no whitelist is applied here. TARGET_TITLES is retained
+                # solely to flag exam-track roles for downstream prioritisation.
+                target_matches = sum(
+                    1 for item in items if self._matches_target_title(item.get("title", ""))
+                )
                 self.logger.info(
-                    "CSB JVE host %s parsed %s jobs (%s target matches)",
+                    "CSB JVE host %s parsed %s jobs (%s exam-track matches, all retained)",
                     url,
                     len(items),
-                    len(matched),
+                    target_matches,
                 )
-                return matched
+                return items
             except Exception as exc:
                 self.logger.warning("CSB JVE host failed, trying next: %s (%s)", url, exc)
                 continue
