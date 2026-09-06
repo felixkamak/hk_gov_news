@@ -32,10 +32,16 @@ jobs:
           cd social_media_scraper
           python image_generator.py
 
-      - name: Commit output to repo
+      - name: Commit output and trigger Vercel rebuild
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add social_media_scraper/output/
-          git diff --staged --quiet || git commit -m "Auto: social media scraper $(date '+%Y-%m-%d')"
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes in scraper output — skipping commit and rebuild."
+          else
+            git commit -m "Auto: social media scraper $(date '+%Y-%m-%d')"
+            git push
+            echo "Output updated — triggering Vercel rebuild."
+            curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
+          fi
