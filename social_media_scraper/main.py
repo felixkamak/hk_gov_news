@@ -241,7 +241,7 @@ def run_collectors() -> list[dict[str, Any]]:
 
 
 def matches_target_job(title: str) -> bool:
-    """AceGovHK-relevant titles only (job_openings bucket)."""
+    """Exam-track titles (used only to tag is_exam_track, not to gate visibility)."""
     return any(keyword in title for keyword in TARGET_TITLES)
 
 
@@ -280,7 +280,10 @@ def categorise_items(items: list[dict[str, Any]]) -> dict[str, list[dict[str, An
         trigger = to_trigger(item)
 
         is_job = any(keyword in text for keyword in JOB_KEYWORDS) or item.get("content_type") == "job"
-        if is_job and matches_target_job(item.get("title", "")):
+        # All genuine government vacancies belong in job_openings. TARGET_TITLES
+        # is no longer used to gate visibility; it only tags exam-track roles for
+        # prioritisation (see is_exam_track on the trigger).
+        if is_job:
             buckets["job_openings"].append(trigger)
         elif any(keyword in text for keyword in EXAM_KEYWORDS) or item.get("content_type") == "exam":
             buckets["exam_updates"].append(trigger)
@@ -303,6 +306,7 @@ def to_trigger(item: dict[str, Any]) -> dict[str, Any]:
         "salary": item.get("salary", ""),
         "department": item.get("department", ""),
         "is_urgent": bool(item.get("is_urgent") or item.get("preclassified_priority") == "urgent"),
+        "is_exam_track": matches_target_job(item.get("title", "")),
     }
 
 
