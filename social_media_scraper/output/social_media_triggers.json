@@ -3,8 +3,8 @@
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
-    "job_openings": 21,
-    "exam_updates": 1,
+    "job_openings": 24,
+    "exam_updates": 3,
     "announcements": 0,
     "policy_news": 25,
     "source_updates": 0,
@@ -12,6 +12,20 @@
   },
   "triggers": {
     "job_openings": [
+      {
+        "title": "技工",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=49742&languageType=1",
+        "published_date": "2026-07-30",
+        "summary": "職位: 技工; 部門: 漁農自然護理署; 職位編號: 49742; 薪酬: 港幣每月19930元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "全年接受申請",
+        "salary": "港幣每月19930元",
+        "department": "漁農自然護理署",
+        "is_urgent": false,
+        "is_exam_track": false
+      },
       {
         "title": "助理民航事務主任(民航行政管理)",
         "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50282&languageType=1",
@@ -55,6 +69,20 @@
         "is_exam_track": false
       },
       {
+        "title": "關員",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50089&languageType=1",
+        "published_date": "2026-07-01",
+        "summary": "職位: 關員; 部門: 香港海關; 職位編號: 50089; 薪酬: 港幣每月25980元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "全年接受申請",
+        "salary": "港幣每月25980元",
+        "department": "香港海關",
+        "is_urgent": false,
+        "is_exam_track": true
+      },
+      {
         "title": "牙科衞生員",
         "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50156&languageType=1",
         "published_date": "2026-08-31",
@@ -78,6 +106,20 @@
         "content_type": "job",
         "closing_date": "全年接受申請",
         "salary": "港幣每月72430元",
+        "department": "衞生署",
+        "is_urgent": false,
+        "is_exam_track": false
+      },
+      {
+        "title": "醫生",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50151&languageType=1",
+        "published_date": "2026-07-08",
+        "summary": "職位: 醫生; 部門: 衞生署; 職位編號: 50151; 薪酬: 港幣每月79410元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "全年接受申請",
+        "salary": "港幣每月79410元",
         "department": "衞生署",
         "is_urgent": false,
         "is_exam_track": false
@@ -135,6 +177,34 @@
         "closing_date": "全年接受申請",
         "salary": "港幣每月49300元",
         "department": "消防處",
+        "is_urgent": false,
+        "is_exam_track": true
+      },
+      {
+        "title": "警員",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50179&languageType=1",
+        "published_date": "2026-07-17",
+        "summary": "職位: 警員; 部門: 香港警務處; 職位編號: 50179; 薪酬: 港幣每月29520元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "全年接受申請",
+        "salary": "港幣每月29520元",
+        "department": "香港警務處",
+        "is_urgent": false,
+        "is_exam_track": false
+      },
+      {
+        "title": "督察",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50178&languageType=1",
+        "published_date": "2026-07-17",
+        "summary": "職位: 督察; 部門: 香港警務處; 職位編號: 50178; 薪酬: 港幣每月53055元; 截止: 全年接受申請",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "全年接受申請",
+        "salary": "港幣每月53055元",
+        "department": "香港警務處",
         "is_urgent": false,
         "is_exam_track": true
       },
@@ -277,7 +347,9 @@
         "department": "水務署",
         "is_urgent": false,
         "is_exam_track": false
-      },
+      }
+    ],
+    "exam_updates": [
       {
         "title": "綜合招聘考試（下一輪）",
         "url": "https://www.csb.gov.hk/tc_chi/recruit/cre/949.html",
@@ -305,9 +377,7 @@
         "department": "",
         "is_urgent": false,
         "is_exam_track": false
-      }
-    ],
-    "exam_updates": [
+      },
       {
         "title": "數碼化基本法及香港國安法測試（全年）",
         "url": "https://www.csb.gov.hk/tc_chi/recruit/2934.html",
