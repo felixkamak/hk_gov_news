@@ -278,14 +278,24 @@ def categorise_items(items: list[dict[str, Any]]) -> dict[str, list[dict[str, An
     for item in items:
         text = f"{item.get('title', '')} {item.get('summary', '')}"
         trigger = to_trigger(item)
+        content_type = item.get("content_type")
 
-        is_job = any(keyword in text for keyword in JOB_KEYWORDS) or item.get("content_type") == "job"
+        # Explicit content_type wins over keyword guessing. This prevents e.g.
+        # "綜合招聘考試" (an exam) from being pulled into job_openings just
+        # because its name contains the job keyword "招聘".
+        if content_type == "exam":
+            buckets["exam_updates"].append(trigger)
+            continue
+        if content_type == "announcement":
+            buckets["announcements"].append(trigger)
+            continue
+
+        is_job = any(keyword in text for keyword in JOB_KEYWORDS) or content_type == "job"
         # All genuine government vacancies belong in job_openings. TARGET_TITLES
-        # is no longer used to gate visibility; it only tags exam-track roles for
-        # prioritisation (see is_exam_track on the trigger).
+        # is only used to tag exam-track roles (see is_exam_track on the trigger).
         if is_job:
             buckets["job_openings"].append(trigger)
-        elif any(keyword in text for keyword in EXAM_KEYWORDS) or item.get("content_type") == "exam":
+        elif any(keyword in text for keyword in EXAM_KEYWORDS):
             buckets["exam_updates"].append(trigger)
         else:
             buckets["announcements"].append(trigger)
