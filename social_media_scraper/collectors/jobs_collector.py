@@ -251,7 +251,20 @@ class JobsCollector(BaseCollector):
         base = base_url or self.source.get("url", CSB_JOB_LIST_URL)
         items: list[dict[str, Any]] = []
 
-        for row in soup.find_all("tr"):
+        # Civil-service vacancies live in <table id="csTable">; non-civil
+        # vacancies live in a separate <table id="ncsTable">. We only want
+        # civil-service roles, so scan the csTable subtree exclusively.
+        cs_table = soup.find("table", id="csTable")
+        if cs_table is None:
+            self.logger.warning(
+                "csTable not found; falling back to whole-document scan "
+                "(may include non-civil-service rows)"
+            )
+            scope = soup
+        else:
+            scope = cs_table
+
+        for row in scope.find_all("tr"):
             cells = row.find_all("td")
             if len(cells) < 7:
                 continue
@@ -375,8 +388,9 @@ class JobsCollector(BaseCollector):
         return None
 
     def _count_parseable_job_rows(self, soup: BeautifulSoup) -> int:
+        scope = soup.find("table", id="csTable") or soup
         count = 0
-        for row in soup.find_all("tr"):
+        for row in scope.find_all("tr"):
             cells = row.find_all("td")
             if len(cells) < 7:
                 continue
