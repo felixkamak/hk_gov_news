@@ -308,7 +308,10 @@ class JobsCollector(BaseCollector):
             return None
 
         title = self._clean_text(title_link.get_text(" ", strip=True))
-        if title in TITLE_BLOCKLIST or len(title) < 3:
+        # Guard against blank/single-char noise cells, but allow legitimate
+        # 2-character job titles (技工, 關員, 醫生, 警員, 督察, etc.). The real
+        # authenticity check is the numeric job_id + detail link below.
+        if title in TITLE_BLOCKLIST or len(title) < 2:
             return None
 
         department = self._clean_text(cells[layout["department"]].get_text(" ", strip=True))
