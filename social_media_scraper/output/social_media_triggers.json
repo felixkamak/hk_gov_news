@@ -1,12 +1,12 @@
 {
-  "generated_date": "2026-09-06",
+  "generated_date": "2026-09-08",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
-    "job_openings": 24,
+    "job_openings": 23,
     "exam_updates": 3,
     "announcements": 0,
-    "policy_news": 25,
+    "policy_news": 22,
     "source_updates": 0,
     "urgent_count": 2
   },
@@ -237,20 +237,6 @@
         "is_exam_track": true
       },
       {
-        "title": "高級律師",
-        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50238&languageType=1",
-        "published_date": "2026-08-07",
-        "summary": "職位: 高級律師; 部門: 知識產權署; 職位編號: 50238; 薪酬: 港幣每月130255元; 截止: 2026-09-07",
-        "source_name": "公務員事務局",
-        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
-        "content_type": "job",
-        "closing_date": "2026-09-07",
-        "salary": "港幣每月130255元",
-        "department": "知識產權署",
-        "is_urgent": false,
-        "is_exam_track": false
-      },
-      {
         "title": "技工(泳灘/泳池)",
         "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50292&languageType=1",
         "published_date": "2026-09-04",
@@ -395,6 +381,30 @@
     ],
     "announcements": [],
     "policy_news": [
+      {
+        "title": "十月一日起港珠澳大橋進口鮮活食品延長至全日二十四小時通關",
+        "url": "https://www.info.gov.hk/gia/general/202609/07/P2026090700299.htm",
+        "published_date": "2026-09-07",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202609/07c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "border",
+        "is_urgent": false
+      },
+      {
+        "title": "妥善控制狗隻特別巡查及執法行動總結",
+        "url": "https://www.info.gov.hk/gia/general/202609/06/P2026090600692.htm",
+        "published_date": "2026-09-06",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202609/06c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "enforcement",
+        "is_urgent": false
+      },
       {
         "title": "財政司司長出席中國香港牆球代表隊首征世錦賽誓師大會致辭（只有中文）（附圖／短片）",
         "url": "https://www.info.gov.hk/gia/general/202609/05/P2026090500508.htm",
@@ -634,70 +644,10 @@
         "category": "policy",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "行政長官出席第20屆亞洲運動會中國香港代表團授旗典禮致辭（只有中文）（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202609/01/P2026090100256.htm",
-        "published_date": "2026-09-01",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202609/01c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會交通事務委員會前往北京進行職務考察",
-        "url": "https://www.info.gov.hk/gia/general/202609/01/P2026090100349.htm",
-        "published_date": "2026-09-01",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202609/01c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "文化體育及旅遊局常任秘書長出席製衣業訓練局「Wear's HK」開幕禮致辭（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202609/01/P2026090100842.htm",
-        "published_date": "2026-09-01",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202609/01c.htm",
-        "content_type": "policy_news",
-        "category": "civil_service",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "政府委任大嶼山發展諮詢委員會委員",
-        "url": "https://www.info.gov.hk/gia/general/202609/01/P2026090100655.htm",
-        "published_date": "2026-09-01",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202609/01c.htm",
-        "content_type": "policy_news",
-        "category": "civil_service",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "非法勞工被判入獄",
-        "url": "https://www.info.gov.hk/gia/general/202608/31/P2026083100673.htm",
-        "published_date": "2026-08-31",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202608/31c.htm",
-        "content_type": "policy_news",
-        "category": "immigration",
-        "subtopic": "enforcement",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-09-06"
+  "jobs_last_updated": "2026-09-08"
 }
