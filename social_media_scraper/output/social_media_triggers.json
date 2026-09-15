@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-09-13",
+  "generated_date": "2026-09-15",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
@@ -410,6 +410,66 @@
     "announcements": [],
     "policy_news": [
       {
+        "title": "財政司司長出席長者安居協會三十周年「智慧養老　平安生活」論壇致辭（只有中文）（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202609/14/P2026091400331.htm",
+        "published_date": "2026-09-14",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202609/14c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "行政長官將向立法會公布《香港第一個五年規劃》及發表《施政報告》",
+        "url": "https://www.info.gov.hk/gia/general/202609/14/P2026091400495.htm",
+        "published_date": "2026-09-14",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202609/14c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "政制及內地事務局局長出席香港工商界婦女慶祝中華人民共和國成立77週年午餐會致辭（只有中文）（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202609/14/P2026091400752.htm",
+        "published_date": "2026-09-14",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202609/14c.htm",
+        "content_type": "policy_news",
+        "category": "security_law",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "勞工顧問委員會僱員代表選舉現接受登記及提名",
+        "url": "https://www.info.gov.hk/gia/general/202609/14/P2026091400267.htm",
+        "published_date": "2026-09-14",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202609/14c.htm",
+        "content_type": "policy_news",
+        "category": "security_law",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "​《香港第一個五年規劃》、《施政報告》及相關刊物星期三公開派發",
+        "url": "https://www.info.gov.hk/gia/general/202609/14/P2026091400481.htm",
+        "published_date": "2026-09-14",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202609/14c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
         "title": "香港特區立法會堅定支持法庭依法對「支聯會煽動顛覆國家政權案」的判刑",
         "url": "https://www.info.gov.hk/gia/general/202609/12/P2026091200412.htm",
         "published_date": "2026-09-12",
@@ -648,70 +708,10 @@
         "category": "security_law",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "入境事務處與旅遊業監管局採取聯合行動打擊非法勞工拘兩人（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202609/09/P2026090900607.htm",
-        "published_date": "2026-09-09",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202609/09c.htm",
-        "content_type": "policy_news",
-        "category": "immigration",
-        "subtopic": "enforcement",
-        "is_urgent": false
-      },
-      {
-        "title": "​香港海關於內地國慶黃金周假期前加強打擊售賣冒牌物品活動（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202609/09/P2026090900287.htm",
-        "published_date": "2026-09-09",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202609/09c.htm",
-        "content_type": "policy_news",
-        "category": "immigration",
-        "subtopic": "enforcement",
-        "is_urgent": false
-      },
-      {
-        "title": "​立法會對全國政協原副主席、香港特區首任行政長官董建華逝世深表哀悼",
-        "url": "https://www.info.gov.hk/gia/general/202609/09/P2026090900340.htm",
-        "published_date": "2026-09-09",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202609/09c.htm",
-        "content_type": "policy_news",
-        "category": "security_law",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "​​前任行政長官曾蔭權發表聲明（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202609/09/P2026090900305.htm",
-        "published_date": "2026-09-09",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202609/09c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "行政長官出席香港特區青年赴聯合國系統任職發佈儀式致辭（只有中文）（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202609/08/P2026090800228.htm",
-        "published_date": "2026-09-08",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202609/08c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-09-13"
+  "jobs_last_updated": "2026-09-15"
 }
