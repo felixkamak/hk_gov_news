@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-10-18",
+  "generated_date": "2026-10-20",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
@@ -270,6 +270,54 @@
     "announcements": [],
     "policy_news": [
       {
+        "title": "行政長官與亞洲基礎設施投資銀行行長會面（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202610/19/P2026101900136.htm",
+        "published_date": "2026-10-19",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/19c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "各部門加強措施應對皇崗口岸入境人流高峰",
+        "url": "https://www.info.gov.hk/gia/general/202610/19/P2026101900500.htm",
+        "published_date": "2026-10-19",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/19c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "border",
+        "is_urgent": false
+      },
+      {
+        "title": "行政長官哀悼吳康民逝世",
+        "url": "https://www.info.gov.hk/gia/general/202610/18/P2026101800434.htm",
+        "published_date": "2026-10-18",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/18c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "皇崗口岸旅客出入境最新情況（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202610/18/P2026101800416.htm",
+        "published_date": "2026-10-18",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/18c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "border",
+        "is_urgent": false
+      },
+      {
         "title": "財政司司長在曼谷與泰國副總理及跨國金融機構高層會面（附圖／短片）",
         "url": "https://www.info.gov.hk/gia/general/202610/17/P2026101700319.htm",
         "published_date": "2026-10-17",
@@ -520,58 +568,10 @@
         "category": "policy",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "選舉委員會界別分組一般選舉今日再接獲28份提名表格",
-        "url": "https://www.info.gov.hk/gia/general/202610/14/P2026101400724.htm",
-        "published_date": "2026-10-14",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/14c.htm",
-        "content_type": "policy_news",
-        "category": "security_law",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會：醫務衞生局局長就「共建健康活力香港，貢獻『健康中國』建設」議員議案開場發言（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202610/14/P2026101400524.htm",
-        "published_date": "2026-10-14",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/14c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會：醫務衞生局局長就「共建健康活力香港，貢獻『健康中國』建設」議員議案總結發言（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202610/14/P2026101400740.htm",
-        "published_date": "2026-10-14",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/14c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會：運輸及物流局局長就「積極配合國家《十五五規劃綱要》，促進粵港澳大灣區港口、機場和軌道交通協同發展」議員議案開場發言（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202610/14/P2026101400738.htm",
-        "published_date": "2026-10-14",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/14c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-10-18"
+  "jobs_last_updated": "2026-10-20"
 }
