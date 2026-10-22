@@ -44,7 +44,6 @@ jobs:
           retention-days: 7
 
       - name: Commit output and trigger Vercel rebuild
-        if: github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -54,6 +53,10 @@ jobs:
           else
             git commit -m "Auto: social media scraper $(date '+%Y-%m-%d')"
             git push
-            echo "Output updated — triggering Vercel rebuild."
-            curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
+            if [ "${{ github.ref }}" = "refs/heads/main" ]; then
+              echo "Output updated — triggering Vercel rebuild."
+              curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
+            else
+              echo "Test branch — output committed to this branch only, no Vercel rebuild."
+            fi
           fi
