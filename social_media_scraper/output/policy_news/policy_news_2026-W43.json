@@ -3,11 +3,23 @@
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
   "last_updated": "2026-10-22",
-  "count": 39,
+  "count": 40,
   "items": [
     {
       "title": "行政長官在第四屆粵港澳大灣區發展工商大會致辭（只有中文）（附短片）",
       "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102100311.htm",
+      "published_date": "2026-10-22",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+      "content_type": "policy_news",
+      "category": "policy",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "​財政司司長訪問北京",
+      "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200273.htm",
       "published_date": "2026-10-22",
       "summary": "",
       "source_name": "政府新聞處",

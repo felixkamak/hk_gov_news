@@ -282,6 +282,18 @@
         "is_urgent": false
       },
       {
+        "title": "​財政司司長訪問北京",
+        "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200273.htm",
+        "published_date": "2026-10-22",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
         "title": "行政長官與財政部部長會面（附圖）",
         "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100694.htm",
         "published_date": "2026-10-21",
@@ -554,18 +566,6 @@
         "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
         "content_type": "policy_news",
         "category": "civil_service",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "創新科技及工業局常任秘書長出席香港政協青年聯會互動交流分享會致辭（只有中文）（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100624.htm",
-        "published_date": "2026-10-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
-        "content_type": "policy_news",
-        "category": "security_law",
         "subtopic": "",
         "is_urgent": false
       }
