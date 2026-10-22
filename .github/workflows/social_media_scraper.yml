@@ -2,7 +2,7 @@ name: Social Media Content Scraper
 
 on:
   schedule:
-    - cron: '0 21 * * 0,2,4'  # Mon/Wed/Fri 5am HKT (UTC+8, trigger Sun/Tue/Thu 21:00 UTC)
+    - cron: '0 21 * * *'  # Daily 5am HKT (21:00 UTC previous day)
   workflow_dispatch:  # Keep manual trigger for testing
 
 jobs:

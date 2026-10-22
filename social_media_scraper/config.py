@@ -83,7 +83,7 @@ SOURCE_RELEVANCE_KEYWORDS = [
 # ---------------------------------------------------------------------------
 
 # Rolling window: every run re-scrapes the last N days of info.gov.hk press
-# releases so no day is missed between Mon/Wed/Fri runs. Deduped into per-week
+# releases so a failed daily run is back-filled next time. Deduped into per-week
 # archive files afterwards.
 POLICY_BACKFILL_DAYS = 7
 
