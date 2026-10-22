@@ -14,6 +14,7 @@ if str(_PKG_ROOT) not in sys.path:
     sys.path.insert(0, str(_PKG_ROOT))
 
 from collectors.announcements_collector import AnnouncementsCollector  # noqa: E402
+from collectors.ao_eo_news_collector import AoEoNewsCollector  # noqa: E402
 from collectors.base_collector import setup_logging  # noqa: E402
 from collectors.info_gov_hk_collector import (  # noqa: E402
     InfoGovHkCollector,
@@ -28,6 +29,7 @@ from collectors.source_monitor import (  # noqa: E402
 )
 from config import (  # noqa: E402
     ANNOUNCEMENT_SOURCES,
+    AO_EO_NEWS_DIR,
     JOB_SOURCES,
     MONITOR_SOURCES,
     OUTPUT_DIR,
@@ -37,7 +39,11 @@ from config import (  # noqa: E402
     SNAPSHOT_FILE,
     SOURCE_RELEVANCE_KEYWORDS,
 )
-from policy_archive import recent_items, write_weekly_archive  # noqa: E402
+from policy_archive import (  # noqa: E402
+    load_archive_items,
+    recent_items,
+    write_weekly_archive,
+)
 
 
 logger = logging.getLogger(__name__)
@@ -63,6 +69,20 @@ def main() -> None:
     policy_items = collect_policy_news()
     write_weekly_archive(policy_items, POLICY_NEWS_DIR)
     buckets["policy_news"] = recent_items(policy_items, POLICY_NEWS_IN_MAIN_LIMIT)
+
+    # AO/EO news tracker: own weekly archive with article bodies. Not added to
+    # the triggers JSON, and a failure here never blocks the main output.
+    try:
+        ao_eo_items = collect_ao_eo_news()
+        write_weekly_archive(
+            ao_eo_items, AO_EO_NEWS_DIR, prefix="ao_eo_news", prefer_new=True
+        )
+        print(
+            f"ao_eo_news={len(ao_eo_items)} "
+            f"with_body={sum(1 for i in ao_eo_items if i.get('body_ok'))}"
+        )
+    except Exception as exc:
+        logger.exception("AO/EO news collection failed: %s", exc)
 
     # Source-change safety net: snapshot every watched CSB page + the recruit
     # hub link list, diff against last run, and surface any relevant change even
@@ -180,6 +200,43 @@ def collect_policy_news() -> list[dict[str, Any]]:
                 "info.gov.hk collector failed for %s: %s", source.get("name"), exc
             )
     return dedupe_by_url(collected)
+
+
+def collect_ao_eo_news() -> list[dict[str, Any]]:
+    """Scrape the last POLICY_BACKFILL_DAYS for AO/EO items and attach bodies.
+
+    Bodies already stored in the archive are reused, so each article page is
+    fetched once; a failed body fetch is retried on the next run.
+    """
+    stored = load_archive_items(AO_EO_NEWS_DIR, "ao_eo_news")
+    collected: list[dict[str, Any]] = []
+    last_collector: AoEoNewsCollector | None = None
+    for source in build_backfill_sources(POLICY_BACKFILL_DAYS):
+        try:
+            collector = AoEoNewsCollector(source)
+            last_collector = collector
+            collected.extend(collector.parse())
+        except Exception as exc:  # one bad day never blocks the rest
+            logger.exception("AO/EO collector failed for %s: %s", source.get("name"), exc)
+
+    items = dedupe_by_url(collected)
+    if last_collector is None:
+        return items
+
+    for item in items:
+        previous = stored.get(item["url"])
+        if previous and previous.get("body_ok"):
+            item["body"] = previous.get("body", "")
+            item["body_ok"] = True
+            continue
+        try:
+            body = last_collector.fetch_body(item["url"])
+        except Exception as exc:
+            logger.warning("Body fetch failed for %s: %s", item["url"], exc)
+            body = ""
+        item["body"] = body
+        item["body_ok"] = bool(body)
+    return items
 
 
 def collect_source_updates() -> list[dict[str, Any]]:

@@ -159,3 +159,63 @@ POLICY_IMMIGRATION_KEYWORDS = list(
 POLICY_ALLOW_KEYWORDS = list(
     dict.fromkeys(POLICY_ALLOW_KEYWORDS + POLICY_IMMIGRATION_KEYWORDS)
 )
+
+
+# ---------------------------------------------------------------------------
+# AO / EO 時事追蹤（news tracker）
+# ---------------------------------------------------------------------------
+# Separate stream from policy_news: wider net for AO/EO interview prep, plus the
+# article body so weekly reports can be summarised. Stored in its own weekly
+# archive and NOT added to social_media_triggers.json, so /news is unaffected.
+# Categories (Felix 2026-10-22): based on public AO/EO interview sources; no
+# international news (not on info.gov.hk). A headline may hit several topics.
+AO_EO_NEWS_DIR = OUTPUT_DIR / "ao_eo_news"
+AO_EO_BODY_MAX_CHARS = 6000
+
+AO_EO_TOPICS = {
+    "population_labour": [  # 1 人口與勞動力
+        "輸入勞工", "補充勞工", "外勞", "勞工", "人才", "高才通", "優才", "專才",
+        "人口", "生育", "安老", "長者", "院舍", "退休保障", "就業", "失業",
+        "最低工資", "銀髮",
+    ],
+    "housing_land": [  # 2 房屋與土地
+        "房屋", "公屋", "居屋", "簡約公屋", "劏房", "土地", "北部都會區", "北都",
+        "新界北", "交椅洲", "明日大嶼", "規劃", "市區重建", "樓宇維修", "舊樓",
+        "大廈", "房委會",
+    ],
+    "national_development": [  # 3 國家發展
+        "大灣區", "一帶一路", "國家", "粵港", "深港", "前海", "河套", "十五五",
+        "內地", "中央", "兩地", "國務院",
+    ],
+    "economy_tourism": [  # 4 經濟與旅遊
+        "經濟", "旅遊", "旅客", "零售", "金融", "創科", "創新科技", "人工智能",
+        "數字", "數碼", "招商", "會展", "盛事", "夜經濟", "產業", "貿易",
+        "中小企", "物流", "航運", "機場",
+    ],
+    "social_policy": [  # 5 其他社會政策
+        "青年", "教育", "學校", "醫療", "醫院", "醫管局", "衞生", "交通",
+        "運輸", "鐵路", "環境", "減碳", "碳中和", "廢物", "回收", "福利",
+        "社會福利", "貧窮", "婦女", "性別", "體育", "文化", "康樂", "動物",
+    ],
+    "policy_legco": [  # 6 施政報告、預算案、立法會
+        "施政報告", "財政預算案", "預算案", "五年規劃", "立法會", "條例草案",
+        "諮詢", "刊憲", "議案", "動議", "政策",
+    ],
+    "civil_service_district": [  # 7 公務員、民政
+        "公務員", "公職", "民政", "關愛隊", "地區", "區議會", "首長級",
+        "常任秘書長", "政務主任",
+    ],
+}
+
+# Dropped even if a topic keyword matched: ceremonies, condolences, routine
+# enforcement / court news, trip itineraries, traffic and weather notices.
+AO_EO_EXCLUDE_KEYWORDS = [
+    "哀悼", "逝世", "酒會", "煙花", "典禮", "頒授", "儀式",
+    "拘捕", "被捕", "檢獲", "搗破", "執法行動", "判刑", "罪成", "法院",
+    "行程", "啓程", "啟程", "返港", "抵達",
+    "交通安排", "運輸安排", "封路", "改道", "停水", "停電", "打擊",
+    "任命", "委任",
+    "天氣", "天文台", "空氣質素", "泳灘", "紅旗",
+    "招聘", "招標", "拍賣", "外匯基金票據", "失蹤", "尋人", "遺失",
+    "出入境最新情況",
+]

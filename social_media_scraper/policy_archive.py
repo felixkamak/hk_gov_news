@@ -50,11 +50,14 @@ def write_weekly_archive(
     items: list[dict[str, Any]],
     output_dir: Path,
     today: date | None = None,
+    prefix: str = "policy_news",
+    prefer_new: bool = False,
 ) -> dict[str, Path]:
     """Merge `items` into their ISO-week files. Returns {week_key: path} touched.
 
     Items whose published_date cannot be parsed are filed under the current
-    ISO week so nothing is silently dropped.
+    ISO week so nothing is silently dropped. With prefer_new=True a re-scraped
+    item replaces the stored one (used when new items carry fresher fields).
     """
     output_dir.mkdir(parents=True, exist_ok=True)
     anchor = today or date.today()
@@ -67,11 +70,12 @@ def write_weekly_archive(
 
     touched: dict[str, Path] = {}
     for week_key, new_items in grouped.items():
-        path = output_dir / f"policy_news_{week_key}.json"
+        path = output_dir / f"{prefix}_{week_key}.json"
         existing = _load_week(path)
 
         merged: dict[str, dict[str, Any]] = {}
-        for item in existing + new_items:
+        ordered_input = new_items + existing if prefer_new else existing + new_items
+        for item in ordered_input:
             url = str(item.get("url") or "").strip()
             if not url:
                 continue
@@ -117,3 +121,14 @@ def recent_items(
             merged.setdefault(url, item)
     ordered = sorted(merged.values(), key=_sort_key, reverse=True)
     return ordered[:limit]
+
+
+def load_archive_items(output_dir: Path, prefix: str) -> dict[str, dict[str, Any]]:
+    """All stored items across a prefix's week files, keyed by URL."""
+    stored: dict[str, dict[str, Any]] = {}
+    for path in sorted(output_dir.glob(f"{prefix}_*.json")):
+        for item in _load_week(path):
+            url = str(item.get("url") or "").strip()
+            if url:
+                stored.setdefault(url, item)
+    return stored

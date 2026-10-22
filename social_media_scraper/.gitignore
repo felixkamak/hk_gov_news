@@ -21,6 +21,8 @@ output/*
 !output/source_snapshots.json
 !output/policy_news/
 !output/policy_news/*.json
+!output/ao_eo_news/
+!output/ao_eo_news/*.json
 social_media_scraper/output/*
 !social_media_scraper/output/.gitkeep
 !social_media_scraper/output/social_media_triggers.json  
