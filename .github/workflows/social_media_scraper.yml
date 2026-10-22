@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '0 21 * * *'  # Daily 5am HKT (21:00 UTC previous day)
   workflow_dispatch:  # Keep manual trigger for testing
+  push:
+    branches:
+      - 'scraper-test/**'  # Test runs: push to a scraper-test/* branch to run without publishing
 
 jobs:
   scrape:
@@ -32,7 +35,16 @@ jobs:
           cd social_media_scraper
           python image_generator.py
 
+      - name: Upload output for inspection
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-output
+          path: social_media_scraper/output/
+          retention-days: 7
+
       - name: Commit output and trigger Vercel rebuild
+        if: github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
