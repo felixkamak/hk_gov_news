@@ -17,7 +17,10 @@ logs/
 *.log
 output/*
 !output/.gitkeep
-!output/social_media_triggers.json          
+!output/social_media_triggers.json
+!output/source_snapshots.json
+!output/policy_news/
+!output/policy_news/*.json
 social_media_scraper/output/*
 !social_media_scraper/output/.gitkeep
 !social_media_scraper/output/social_media_triggers.json  
