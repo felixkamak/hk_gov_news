@@ -2,9 +2,21 @@
   "iso_week": "2026-W43",
   "week_start": "2026-10-19",
   "week_end": "2026-10-25",
-  "last_updated": "2026-10-22",
-  "count": 45,
+  "last_updated": "2026-10-23",
+  "count": 49,
   "items": [
+    {
+      "title": "鄉郊代表選舉活動指引今日發表",
+      "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200509.htm",
+      "published_date": "2026-10-22",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202610/22c.htm",
+      "content_type": "policy_news",
+      "category": "security_law",
+      "subtopic": "",
+      "is_urgent": false
+    },
     {
       "title": "行政長官在第四屆粵港澳大灣區發展工商大會致辭（只有中文）（附短片）",
       "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102100311.htm",
@@ -12,6 +24,18 @@
       "summary": "",
       "source_name": "政府新聞處",
       "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+      "content_type": "policy_news",
+      "category": "policy",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "行政長官在2026金融街論壇年會閉幕式致辭（只有中文）（附短片）",
+      "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200260.htm",
+      "published_date": "2026-10-22",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202610/22c.htm",
       "content_type": "policy_news",
       "category": "policy",
       "subtopic": "",
@@ -50,6 +74,30 @@
       "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
       "content_type": "policy_news",
       "category": "policy",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "立法會環境事務委員會參觀中電龍鼓灘發電廠（附圖）",
+      "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200686.htm",
+      "published_date": "2026-10-22",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202610/22c.htm",
+      "content_type": "policy_news",
+      "category": "policy",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "政務司司長出席香港女工商及專業人員聯會30周年暨2026傑出專業女性及女企業家選舉頒獎典禮致辭（只有中文）（附圖／短片）",
+      "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200670.htm",
+      "published_date": "2026-10-22",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202610/22c.htm",
+      "content_type": "policy_news",
+      "category": "security_law",
       "subtopic": "",
       "is_urgent": false
     },
