@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-10-23",
+  "generated_date": "2026-10-24",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
@@ -284,6 +284,126 @@
     "announcements": [],
     "policy_news": [
       {
+        "title": "香港特區立法會強烈譴責並堅決反對英國發表「香港半年報告」",
+        "url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300344.htm",
+        "published_date": "2026-10-23",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/23c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "醫務衞生局局長在立法會衞生事務委員會會議就提高私營醫療服務收費透明度措施的擬議落實安排的開場發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300320.htm",
+        "published_date": "2026-10-23",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/23c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "醫務衞生局局長在立法會衞生事務委員會會議就「醫健通+」的最新進展的開場發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300208.htm",
+        "published_date": "2026-10-23",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/23c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "立法會議員與灣仔和屯門區議會議員舉行會議（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300577.htm",
+        "published_date": "2026-10-23",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/23c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "政制及內地事務局局長出席新界鄉議局一百周年「文化香港：中華文明傳播中的歷史擔當」研討會致辭（只有中文）（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300397.htm",
+        "published_date": "2026-10-23",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/23c.htm",
+        "content_type": "policy_news",
+        "category": "security_law",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "七名候選人獲提名參加勞工顧問委員會僱員代表選舉",
+        "url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300278.htm",
+        "published_date": "2026-10-23",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/23c.htm",
+        "content_type": "policy_news",
+        "category": "security_law",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "​財政司司長在北京拜會中央部委和到訪人工智能企業（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300596.htm",
+        "published_date": "2026-10-23",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/23c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "​行政長官出席新界鄉議局一百周年慶祝晚宴致辭（只有中文）（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300697.htm",
+        "published_date": "2026-10-23",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/23c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "​政府公布《截取通訊及監察條例》下的小組法官任命",
+        "url": "https://www.info.gov.hk/gia/general/202610/23/P2026102200565.htm",
+        "published_date": "2026-10-23",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/23c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "​委任市場失當行為審裁處和證券及期貨事務上訴審裁處主席",
+        "url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300319.htm",
+        "published_date": "2026-10-23",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/23c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
         "title": "鄉郊代表選舉活動指引今日發表",
         "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200509.htm",
         "published_date": "2026-10-22",
@@ -462,130 +582,10 @@
         "category": "policy",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "立法會四題：推動北部都會區的會展業發展",
-        "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100450.htm",
-        "published_date": "2026-10-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會十題：自資專上院校的評審機制",
-        "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100321.htm",
-        "published_date": "2026-10-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會十六題：外籍家庭傭工的管理",
-        "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100249.htm",
-        "published_date": "2026-10-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會十八題：小額錢債審裁處處理的申索",
-        "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100360.htm",
-        "published_date": "2026-10-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會十二題：接受整筆撥款津助的非政府機構的人手編制",
-        "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100247.htm",
-        "published_date": "2026-10-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
-        "content_type": "policy_news",
-        "category": "civil_service",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會十九題：餐飲服務業申請輸入勞工的情況",
-        "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100257.htm",
-        "published_date": "2026-10-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
-        "content_type": "policy_news",
-        "category": "immigration",
-        "subtopic": "talent",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會十七題：救生員人手和救生及急救服務",
-        "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100299.htm",
-        "published_date": "2026-10-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會六題：規管外傭過度借貸",
-        "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100461.htm",
-        "published_date": "2026-10-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會八題：懲教署人手及「智慧監獄」發展",
-        "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100346.htm",
-        "published_date": "2026-10-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會五題：規管藥物",
-        "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100405.htm",
-        "published_date": "2026-10-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-10-23"
+  "jobs_last_updated": "2026-10-24"
 }
