@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-10-24",
+  "generated_date": "2026-10-25",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
@@ -284,6 +284,42 @@
     "announcements": [],
     "policy_news": [
       {
+        "title": "財政司司長出席「創新科技嘉年華2026」開幕儀式致辭（只有中文）（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202610/24/P2026102400501.htm",
+        "published_date": "2026-10-24",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/24c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "行政長官祝賀中國香港運動員在第五屆亞洲殘疾人運動會取得佳績",
+        "url": "https://www.info.gov.hk/gia/general/202610/24/P2026102400470.htm",
+        "published_date": "2026-10-24",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/24c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "特首政策組組長出席「一國兩制」學術研討會（2026）——港澳五年規劃與融入服務國家發展大局致辭（只有中文）（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202610/24/P2026102400500.htm",
+        "published_date": "2026-10-24",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/24c.htm",
+        "content_type": "policy_news",
+        "category": "security_law",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
         "title": "香港特區立法會強烈譴責並堅決反對英國發表「香港半年報告」",
         "url": "https://www.info.gov.hk/gia/general/202610/23/P2026102300344.htm",
         "published_date": "2026-10-23",
@@ -546,46 +582,10 @@
         "category": "policy",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "立法會：署理教育局局長就「深化粵港科技人才教育協作，促進多元人才培育與就業」議員議案開場發言（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100695.htm",
-        "published_date": "2026-10-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會：文化體育及旅遊局局長就「完善精英體育培訓及支援體系，提升本港運動員國際競爭力」動議辯論開場發言（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100476.htm",
-        "published_date": "2026-10-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會：文化體育及旅遊局局長就「完善精英體育培訓及支援體系，提升本港運動員國際競爭力」動議辯論總結發言（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100660.htm",
-        "published_date": "2026-10-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-10-24"
+  "jobs_last_updated": "2026-10-25"
 }
