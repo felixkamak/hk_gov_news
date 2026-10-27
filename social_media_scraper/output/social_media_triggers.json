@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-10-25",
+  "generated_date": "2026-10-27",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
@@ -284,6 +284,102 @@
     "announcements": [],
     "policy_news": [
       {
+        "title": "行政長官與生態環境部部長會面（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202610/26/P2026102600328.htm",
+        "published_date": "2026-10-26",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/26c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "立法會秘書處發布「打造國際醫療創新樞紐：藥械革新　中醫傳承」的《專題快訊》",
+        "url": "https://www.info.gov.hk/gia/general/202610/26/P2026102600547.htm",
+        "published_date": "2026-10-26",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/26c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "政府委任空間數據共享諮詢委員會成員",
+        "url": "https://www.info.gov.hk/gia/general/202610/26/P2026102600314.htm",
+        "published_date": "2026-10-26",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/26c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "政制及內地事務局副局長在立法會政制事務委員會會議就香港第一個五年規劃及二○二六年施政報告中有關粵港澳大灣區建設的政策措施開場發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202610/26/P2026102600511.htm",
+        "published_date": "2026-10-26",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/26c.htm",
+        "content_type": "policy_news",
+        "category": "security_law",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "公務員事務局局長在立法會公務員及資助機構員工事務委員會會議就拓展公務員視野機會的開場發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202610/26/P2026102600251.htm",
+        "published_date": "2026-10-26",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/26c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "《2026年稅務（修訂）（知識產權開支的稅項扣除）條例草案》將提交立法會作首讀和二讀",
+        "url": "https://www.info.gov.hk/gia/general/202610/26/P2026102600498.htm",
+        "published_date": "2026-10-26",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/26c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "​行政長官出席第20屆亞洲運動會中國香港代表團嘉許禮致辭（只有中文）（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202610/26/P2026102600510.htm",
+        "published_date": "2026-10-26",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/26c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "​公務員事務局局長在立法會公務員及資助機構員工事務委員會會議就公務員的領導發展和人才培育計劃及加強培訓工作的最新進展的開場發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202610/26/P2026102600325.htm",
+        "published_date": "2026-10-26",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/26c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
         "title": "財政司司長出席「創新科技嘉年華2026」開幕儀式致辭（只有中文）（附圖／短片）",
         "url": "https://www.info.gov.hk/gia/general/202610/24/P2026102400501.htm",
         "published_date": "2026-10-24",
@@ -486,106 +582,10 @@
         "category": "policy",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "立法會：勞工及福利局副局長就「深化粵港科技人才教育協作，促進多元人才培育與就業」動議辯論總結發言（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200310.htm",
-        "published_date": "2026-10-22",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/22c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會：創新科技及工業局副局長就「深化粵港科技人才教育協作，促進多元人才培育與就業」動議辯論總結發言（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200381.htm",
-        "published_date": "2026-10-22",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/22c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會環境事務委員會參觀中電龍鼓灘發電廠（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200686.htm",
-        "published_date": "2026-10-22",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/22c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "政務司司長出席香港女工商及專業人員聯會30周年暨2026傑出專業女性及女企業家選舉頒獎典禮致辭（只有中文）（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200670.htm",
-        "published_date": "2026-10-22",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/22c.htm",
-        "content_type": "policy_news",
-        "category": "security_law",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "就大埔宏福苑火災成立的獨立委員會向行政長官提交報告",
-        "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200257.htm",
-        "published_date": "2026-10-22",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/22c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "​財政司司長訪問北京",
-        "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200273.htm",
-        "published_date": "2026-10-22",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/22c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "​行政長官收到就大埔宏福苑火災成立的獨立委員會報告（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200297.htm",
-        "published_date": "2026-10-22",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/22c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "行政長官與財政部部長會面（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100694.htm",
-        "published_date": "2026-10-21",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/21c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-10-25"
+  "jobs_last_updated": "2026-10-27"
 }
