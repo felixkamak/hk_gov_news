@@ -2,9 +2,45 @@
   "iso_week": "2026-W44",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "last_updated": "2026-10-27",
-  "count": 8,
+  "last_updated": "2026-10-28",
+  "count": 11,
   "items": [
+    {
+      "title": "香港海關打擊藥店不良營商手法",
+      "url": "https://www.info.gov.hk/gia/general/202610/27/P2026102700621.htm",
+      "published_date": "2026-10-27",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202610/27c.htm",
+      "content_type": "policy_news",
+      "category": "immigration",
+      "subtopic": "enforcement",
+      "is_urgent": false
+    },
+    {
+      "title": "公務員事務局率團到粵閩大學舉辦職業講座（附圖）",
+      "url": "https://www.info.gov.hk/gia/general/202610/27/P2026102700198.htm",
+      "published_date": "2026-10-27",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202610/27c.htm",
+      "content_type": "policy_news",
+      "category": "civil_service",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "兩名僱主因違反「補充勞工優化計劃」規定被行政制裁",
+      "url": "https://www.info.gov.hk/gia/general/202610/27/P2026102700285.htm",
+      "published_date": "2026-10-27",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202610/27c.htm",
+      "content_type": "policy_news",
+      "category": "immigration",
+      "subtopic": "talent",
+      "is_urgent": false
+    },
     {
       "title": "行政長官與生態環境部部長會面（附圖）",
       "url": "https://www.info.gov.hk/gia/general/202610/26/P2026102600328.htm",

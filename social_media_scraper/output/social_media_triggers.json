@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-10-27",
+  "generated_date": "2026-10-28",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
@@ -284,6 +284,42 @@
     "announcements": [],
     "policy_news": [
       {
+        "title": "香港海關打擊藥店不良營商手法",
+        "url": "https://www.info.gov.hk/gia/general/202610/27/P2026102700621.htm",
+        "published_date": "2026-10-27",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/27c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "enforcement",
+        "is_urgent": false
+      },
+      {
+        "title": "公務員事務局率團到粵閩大學舉辦職業講座（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202610/27/P2026102700198.htm",
+        "published_date": "2026-10-27",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/27c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "兩名僱主因違反「補充勞工優化計劃」規定被行政制裁",
+        "url": "https://www.info.gov.hk/gia/general/202610/27/P2026102700285.htm",
+        "published_date": "2026-10-27",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/27c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "talent",
+        "is_urgent": false
+      },
+      {
         "title": "行政長官與生態環境部部長會面（附圖）",
         "url": "https://www.info.gov.hk/gia/general/202610/26/P2026102600328.htm",
         "published_date": "2026-10-26",
@@ -546,46 +582,10 @@
         "category": "security_law",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "行政長官在第四屆粵港澳大灣區發展工商大會致辭（只有中文）（附短片）",
-        "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102100311.htm",
-        "published_date": "2026-10-22",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/22c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "行政長官在2026金融街論壇年會閉幕式致辭（只有中文）（附短片）",
-        "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200260.htm",
-        "published_date": "2026-10-22",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/22c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會：署理教育局局長就「深化粵港科技人才教育協作，促進多元人才培育與就業」動議辯論總結發言（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202610/22/P2026102200366.htm",
-        "published_date": "2026-10-22",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/22c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-10-27"
+  "jobs_last_updated": "2026-10-28"
 }
