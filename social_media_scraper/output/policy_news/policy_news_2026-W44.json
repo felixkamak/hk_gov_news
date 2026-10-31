@@ -3,8 +3,20 @@
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
   "last_updated": "2026-10-31",
-  "count": 77,
+  "count": 78,
   "items": [
+    {
+      "title": "政府委任公務員培訓諮詢委員會成員",
+      "url": "https://www.info.gov.hk/gia/general/202610/31/P2026103000219.htm",
+      "published_date": "2026-10-31",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+      "content_type": "policy_news",
+      "category": "civil_service",
+      "subtopic": "",
+      "is_urgent": false
+    },
     {
       "title": "香港海關在深圳灣管制站偵破一宗走私未完稅製成煙草案件（附圖）",
       "url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000478.htm",
