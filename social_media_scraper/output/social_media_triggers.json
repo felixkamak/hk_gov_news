@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-10-31",
+  "generated_date": "2026-11-01",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
@@ -84,9 +84,9 @@
       },
       {
         "title": "二級懲教助理",
-        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50341&languageType=1",
-        "published_date": "2026-10-01",
-        "summary": "職位: 二級懲教助理; 部門: 懲教署; 職位編號: 50341; 薪酬: 港幣每月24555元; 截止: 全年接受申請",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50418&languageType=1",
+        "published_date": "2026-11-01",
+        "summary": "職位: 二級懲教助理; 部門: 懲教署; 職位編號: 50418; 薪酬: 港幣每月24555元; 截止: 全年接受申請",
         "source_name": "公務員事務局",
         "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
         "content_type": "job",
@@ -224,9 +224,9 @@
       },
       {
         "title": "入境事務助理員",
-        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50342&languageType=1",
-        "published_date": "2026-10-01",
-        "summary": "職位: 入境事務助理員; 部門: 入境事務處; 職位編號: 50342; 薪酬: 港幣每月25620元; 截止: 全年接受申請",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50406&languageType=1",
+        "published_date": "2026-11-01",
+        "summary": "職位: 入境事務助理員; 部門: 入境事務處; 職位編號: 50406; 薪酬: 港幣每月25620元; 截止: 全年接受申請",
         "source_name": "公務員事務局",
         "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
         "content_type": "job",
@@ -339,18 +339,6 @@
     ],
     "announcements": [],
     "policy_news": [
-      {
-        "title": "政府委任公務員培訓諮詢委員會成員",
-        "url": "https://www.info.gov.hk/gia/general/202610/31/P2026103000219.htm",
-        "published_date": "2026-10-31",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/ctoday.htm",
-        "content_type": "policy_news",
-        "category": "civil_service",
-        "subtopic": "",
-        "is_urgent": false
-      },
       {
         "title": "香港海關在深圳灣管制站偵破一宗走私未完稅製成煙草案件（附圖）",
         "url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000478.htm",
@@ -638,10 +626,22 @@
         "category": "immigration",
         "subtopic": "border",
         "is_urgent": false
+      },
+      {
+        "title": "立法會︰教育局局長就「推動新時代下的教師專業發展」議員議案總結發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900363.htm",
+        "published_date": "2026-10-29",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/29c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-10-31"
+  "jobs_last_updated": "2026-11-01"
 }
