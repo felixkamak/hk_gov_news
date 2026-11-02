@@ -2,9 +2,33 @@
   "iso_week": "2026-W44",
   "week_start": "2026-10-26",
   "week_end": "2026-11-01",
-  "last_updated": "2026-10-31",
-  "count": 78,
+  "last_updated": "2026-11-02",
+  "count": 80,
   "items": [
+    {
+      "title": "行政長官在2026大灣區科學論壇開幕式致辭（只有中文）（附短片）",
+      "url": "https://www.info.gov.hk/gia/general/202611/01/P2026103000621.htm",
+      "published_date": "2026-11-01",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/01c.htm",
+      "content_type": "policy_news",
+      "category": "policy",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "行政長官出席香港童軍大會操2026致辭（只有中文）（附圖／短片）",
+      "url": "https://www.info.gov.hk/gia/general/202611/01/P2026110100343.htm",
+      "published_date": "2026-11-01",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/01c.htm",
+      "content_type": "policy_news",
+      "category": "policy",
+      "subtopic": "",
+      "is_urgent": false
+    },
     {
       "title": "政府委任公務員培訓諮詢委員會成員",
       "url": "https://www.info.gov.hk/gia/general/202610/31/P2026103000219.htm",
