@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-11-02",
+  "generated_date": "2026-11-03",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
@@ -340,6 +340,78 @@
     "announcements": [],
     "policy_news": [
       {
+        "title": "財政司副司長兼署理房屋局局長在立法會房屋事務委員會會議就房屋局有關樓宇維修監管制度的改革措施的開場發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200616.htm",
+        "published_date": "2026-11-02",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/02c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "行政長官訪問北京和上海",
+        "url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200220.htm",
+        "published_date": "2026-11-02",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/02c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "行政長官與教育部部長會面（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200346.htm",
+        "published_date": "2026-11-02",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/02c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "立法會將審議《2026年税務（修訂）（加密資產申報框架及經修訂的共同匯報標準）條例草案》",
+        "url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200372.htm",
+        "published_date": "2026-11-02",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/02c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "立法會交通事務委員會參觀中九龍繞道（九龍灣段）（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200558.htm",
+        "published_date": "2026-11-02",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/02c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "環境及生態局局長在立法會環境事務委員會會議就與時並進的優化環境噪音政策措施及《噪音管制（汽車）規例》（第400I章）的修訂建議開場發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202611/02/P2026110200576.htm",
+        "published_date": "2026-11-02",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/02c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
         "title": "行政長官在2026大灣區科學論壇開幕式致辭（只有中文）（附短片）",
         "url": "https://www.info.gov.hk/gia/general/202611/01/P2026103000621.htm",
         "published_date": "2026-11-01",
@@ -566,82 +638,10 @@
         "category": "civil_service",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "31個需要競逐的選舉委員會界別分組將於十一月二十二日舉行的選舉進行投票",
-        "url": "https://www.info.gov.hk/gia/general/202610/30/P2026103000276.htm",
-        "published_date": "2026-10-30",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/30c.htm",
-        "content_type": "policy_news",
-        "category": "security_law",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "香港海關與內地及澳門海關聯手打擊跨境轉運冒牌貨物活動（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900373.htm",
-        "published_date": "2026-10-29",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/29c.htm",
-        "content_type": "policy_news",
-        "category": "immigration",
-        "subtopic": "enforcement",
-        "is_urgent": false
-      },
-      {
-        "title": "食環署積極推進「天羅行動」　嚴厲打擊蟲鼠及衞生問題",
-        "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900666.htm",
-        "published_date": "2026-10-29",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/29c.htm",
-        "content_type": "policy_news",
-        "category": "immigration",
-        "subtopic": "enforcement",
-        "is_urgent": false
-      },
-      {
-        "title": "財政司司長於有關就大埔宏福苑火災成立的獨立委員會報告相關事宜記者會開場發言（只有中文）（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900641.htm",
-        "published_date": "2026-10-29",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/29c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "財政司副司長兼署理房屋局局長於有關就大埔宏福苑火災成立的獨立委員會報告相關事宜記者會開場發言（只有中文）（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900620.htm",
-        "published_date": "2026-10-29",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/29c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "行政長官於有關就大埔宏福苑火災成立的獨立委員會報告相關事宜記者會開場發言（只有中文）（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900634.htm",
-        "published_date": "2026-10-29",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202610/29c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-11-02"
+  "jobs_last_updated": "2026-11-03"
 }
