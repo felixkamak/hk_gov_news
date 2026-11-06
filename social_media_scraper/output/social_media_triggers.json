@@ -1,9 +1,9 @@
 {
-  "generated_date": "2026-11-05",
+  "generated_date": "2026-11-06",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
-    "job_openings": 20,
+    "job_openings": 21,
     "exam_updates": 3,
     "announcements": 0,
     "policy_news": 25,
@@ -181,20 +181,6 @@
         "is_exam_track": false
       },
       {
-        "title": "警察助理電訊督察",
-        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50405&languageType=1",
-        "published_date": "2026-10-23",
-        "summary": "職位: 警察助理電訊督察; 部門: 香港警務處; 職位編號: 50405; 薪酬: 港幣每月34075元; 截止: 2026-11-05",
-        "source_name": "公務員事務局",
-        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
-        "content_type": "job",
-        "closing_date": "2026-11-05",
-        "salary": "港幣每月34075元",
-        "department": "香港警務處",
-        "is_urgent": false,
-        "is_exam_track": true
-      },
-      {
         "title": "警員",
         "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50179&languageType=1",
         "published_date": "2026-07-17",
@@ -235,6 +221,34 @@
         "department": "入境事務處",
         "is_urgent": true,
         "is_exam_track": true
+      },
+      {
+        "title": "助理評税主任",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50432&languageType=1",
+        "published_date": "2026-11-06",
+        "summary": "職位: 助理評税主任; 部門: 税務局; 職位編號: 50432; 薪酬: 港幣每月37585元; 截止: 2026-11-19",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "2026-11-19",
+        "salary": "港幣每月37585元",
+        "department": "税務局",
+        "is_urgent": false,
+        "is_exam_track": false
+      },
+      {
+        "title": "二級破產管理主任",
+        "url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_003_text.action?jobid=50439&languageType=1",
+        "published_date": "2026-11-06",
+        "summary": "職位: 二級破產管理主任; 部門: 破產管理署; 職位編號: 50439; 薪酬: 港幣每月34075元; 截止: 2026-11-20",
+        "source_name": "公務員事務局",
+        "source_url": "https://csboa1.csb.gov.hk/csboa/jve/JVE_001_text.action?languageType=1",
+        "content_type": "job",
+        "closing_date": "2026-11-20",
+        "salary": "港幣每月34075元",
+        "department": "破產管理署",
+        "is_urgent": false,
+        "is_exam_track": false
       },
       {
         "title": "社會工作助理",
@@ -339,6 +353,126 @@
     ],
     "announcements": [],
     "policy_news": [
+      {
+        "title": "香港特區立法會堅定支持法庭依法對「黃之鋒串謀勾結案」的判刑",
+        "url": "https://www.info.gov.hk/gia/general/202611/05/P2026110500790.htm",
+        "published_date": "2026-11-05",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/05c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "香港海關採取全港性執法行動打擊私煙零售點（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202611/05/P2026110500528.htm",
+        "published_date": "2026-11-05",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/05c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "enforcement",
+        "is_urgent": false
+      },
+      {
+        "title": "警務處國家安全處拘捕一名男子",
+        "url": "https://www.info.gov.hk/gia/general/202611/05/P2026110500830.htm",
+        "published_date": "2026-11-05",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/05c.htm",
+        "content_type": "policy_news",
+        "category": "security_law",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "行政長官在上海出席第九屆虹橋國際經濟論壇「對接『十五五』 服務國家發展　香港新機遇」香港分論壇致辭（只有中文）（附圖／短片）",
+        "url": "https://www.info.gov.hk/gia/general/202611/05/P2026110500469.htm",
+        "published_date": "2026-11-05",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/05c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "立法會：醫務衞生局副局長就「貫徹『居家安老為本』，構建長者友善社區」議員議案總結發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202611/05/P2026110500466.htm",
+        "published_date": "2026-11-05",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/05c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "立法會：房屋局副局長就「貫徹『居家安老為本』，構建長者友善社區」議員議案總結發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202611/05/P2026110500407.htm",
+        "published_date": "2026-11-05",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/05c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "立法會：勞工及福利局局長就「貫徹『居家安老為本』，構建長者友善社區」議員議案總結發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202611/05/P2026110500425.htm",
+        "published_date": "2026-11-05",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/05c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "立法會：勞工及福利局副局長就「貫徹『居家安老為本』，構建長者友善社區」議員議案開場發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202611/05/P2026110500265.htm",
+        "published_date": "2026-11-05",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/05c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "立法會：創新科技及工業局副局長就「貫徹『居家安老為本』，構建長者友善社區」議員議案總結發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202611/05/P2026110500422.htm",
+        "published_date": "2026-11-05",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/05c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "創新科技及工業局常任秘書長出席香港2026浙江大學科技創新論壇致辭（只有中文）（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202611/05/P2026110500261.htm",
+        "published_date": "2026-11-05",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/05c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
       {
         "title": "行政長官繼續北京訪問行程（附圖╱短片）",
         "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400346.htm",
@@ -518,130 +652,10 @@
         "category": "immigration",
         "subtopic": "enforcement",
         "is_urgent": false
-      },
-      {
-        "title": "立法會十七題：發展香港成為「一帶一路」資源配置中心",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400312.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會六題：引進企業來港的效益",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400433.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會八題：PMQ元創方的營運及未來發展",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400357.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會二題：東壩人流管理及北潭涌綠色旅遊發展",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400343.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會二十題：「平安三寶」的執行與推廣",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400219.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會二十二題：在北部都會區落實原區就業",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400443.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會二十一題：人工智能改裝車輛識別系統",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110300278.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會九題：支援內河船的措施及轉型發展",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400331.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會三題：改革大學課程以配合市場需要",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400506.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會七題：落實構建大宗商品交易生態圈",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400306.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-11-05"
+  "jobs_last_updated": "2026-11-06"
 }
