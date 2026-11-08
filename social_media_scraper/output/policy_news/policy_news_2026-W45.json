@@ -2,9 +2,21 @@
   "iso_week": "2026-W45",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "last_updated": "2026-11-07",
-  "count": 65,
+  "last_updated": "2026-11-08",
+  "count": 66,
   "items": [
+    {
+      "title": "行政長官在紀念《基本法》頒布三十六周年研討會致辭（只有中文）（附短片）",
+      "url": "https://www.info.gov.hk/gia/general/202611/07/P2026110500618.htm",
+      "published_date": "2026-11-07",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/07c.htm",
+      "content_type": "policy_news",
+      "category": "security_law",
+      "subtopic": "",
+      "is_urgent": false
+    },
     {
       "title": "香港特區立法會強烈譴責和反對外部勢力詆毀和抹黑法庭就「黃之鋒串謀勾結案」判刑",
       "url": "https://www.info.gov.hk/gia/general/202611/06/P2026110600879.htm",

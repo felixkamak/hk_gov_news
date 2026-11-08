@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-11-07",
+  "generated_date": "2026-11-08",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
@@ -354,6 +354,18 @@
     "announcements": [],
     "policy_news": [
       {
+        "title": "行政長官在紀念《基本法》頒布三十六周年研討會致辭（只有中文）（附短片）",
+        "url": "https://www.info.gov.hk/gia/general/202611/07/P2026110500618.htm",
+        "published_date": "2026-11-07",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/07c.htm",
+        "content_type": "policy_news",
+        "category": "security_law",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
         "title": "香港特區立法會強烈譴責和反對外部勢力詆毀和抹黑法庭就「黃之鋒串謀勾結案」判刑",
         "url": "https://www.info.gov.hk/gia/general/202611/06/P2026110600879.htm",
         "published_date": "2026-11-06",
@@ -640,22 +652,10 @@
         "category": "policy",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "立法會：商務及經濟發展局局長就「打擊圍標，推動圍標行為刑事化」議員議案開場發言（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400519.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "immigration",
-        "subtopic": "enforcement",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-11-07"
+  "jobs_last_updated": "2026-11-08"
 }
