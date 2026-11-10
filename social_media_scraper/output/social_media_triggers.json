@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-11-09",
+  "generated_date": "2026-11-10",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
@@ -354,6 +354,66 @@
     "announcements": [],
     "policy_news": [
       {
+        "title": "立法會將審議《北部都會區發展條例草案》",
+        "url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900539.htm",
+        "published_date": "2026-11-09",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/09c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "立法會《北部都會區發展條例草案》委員會主席於傳媒簡報會上的開場發言（只有中文）（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900669.htm",
+        "published_date": "2026-11-09",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/09c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "民政及青年事務局局長在立法會民政及文化體育事務委員會會議就匯報《建築物管理條例》（第344章）公眾諮詢結果及建議修訂方案的開場發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900590.htm",
+        "published_date": "2026-11-09",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/09c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "文化體育及旅遊局局長在立法會資訊科技及廣播事務委員會會議就文創產業發展處工作報告的開場發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900500.htm",
+        "published_date": "2026-11-09",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/09c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "反非法勞工行動拘二十五人（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900505.htm",
+        "published_date": "2026-11-09",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/09c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "enforcement",
+        "is_urgent": false
+      },
+      {
         "title": "行政長官在紀念《基本法》頒布三十六周年研討會致辭（只有中文）（附短片）",
         "url": "https://www.info.gov.hk/gia/general/202611/07/P2026110500618.htm",
         "published_date": "2026-11-07",
@@ -592,70 +652,10 @@
         "category": "civil_service",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "行政長官繼續北京訪問行程（附圖╱短片）",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400346.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "行政長官在第二十九屆北京‧香港經濟合作研討洽談會開幕式致辭（只有中文）（附圖／短片）",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400234.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會：署理財庫局局長在全體委員會審議階段就《2026年稅務（修訂）（加密資產申報框架及經修訂的共同匯報標準）條例草案》動議修正案發言全文（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400602.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會：署理財庫局局長動議恢復二讀辯論《2026年稅務（修訂）（加密資產申報框架及經修訂的共同匯報標準）條例草案》發言全文（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400630.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會：署理財庫局局長動議三讀《2026年稅務（修訂）（加密資產申報框架及經修訂的共同匯報標準）條例草案》發言全文（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400604.htm",
-        "published_date": "2026-11-04",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/04c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-11-09"
+  "jobs_last_updated": "2026-11-10"
 }

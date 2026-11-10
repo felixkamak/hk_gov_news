@@ -1,0 +1,69 @@
+{
+  "iso_week": "2026-W46",
+  "week_start": "2026-11-09",
+  "week_end": "2026-11-15",
+  "last_updated": "2026-11-10",
+  "count": 5,
+  "items": [
+    {
+      "title": "立法會將審議《北部都會區發展條例草案》",
+      "url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900539.htm",
+      "published_date": "2026-11-09",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/09c.htm",
+      "content_type": "policy_news",
+      "category": "policy",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "立法會《北部都會區發展條例草案》委員會主席於傳媒簡報會上的開場發言（只有中文）（附圖）",
+      "url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900669.htm",
+      "published_date": "2026-11-09",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/09c.htm",
+      "content_type": "policy_news",
+      "category": "policy",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "民政及青年事務局局長在立法會民政及文化體育事務委員會會議就匯報《建築物管理條例》（第344章）公眾諮詢結果及建議修訂方案的開場發言（只有中文）",
+      "url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900590.htm",
+      "published_date": "2026-11-09",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/09c.htm",
+      "content_type": "policy_news",
+      "category": "policy",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "文化體育及旅遊局局長在立法會資訊科技及廣播事務委員會會議就文創產業發展處工作報告的開場發言（只有中文）",
+      "url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900500.htm",
+      "published_date": "2026-11-09",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/09c.htm",
+      "content_type": "policy_news",
+      "category": "policy",
+      "subtopic": "",
+      "is_urgent": false
+    },
+    {
+      "title": "反非法勞工行動拘二十五人（附圖）",
+      "url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900505.htm",
+      "published_date": "2026-11-09",
+      "summary": "",
+      "source_name": "政府新聞處",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/09c.htm",
+      "content_type": "policy_news",
+      "category": "immigration",
+      "subtopic": "enforcement",
+      "is_urgent": false
+    }
+  ]
+}
