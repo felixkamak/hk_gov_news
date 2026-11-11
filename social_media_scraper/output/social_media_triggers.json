@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-11-10",
+  "generated_date": "2026-11-11",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
@@ -354,6 +354,54 @@
     "announcements": [],
     "policy_news": [
       {
+        "title": "食環署總結今年打擊冷氣機滴水工作",
+        "url": "https://www.info.gov.hk/gia/general/202611/10/P2026111000649.htm",
+        "published_date": "2026-11-10",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/10c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "enforcement",
+        "is_urgent": false
+      },
+      {
+        "title": "署理環境及生態局局長在立法會食物安全及環境衞生事務委員會會議就打擊冷氣機滴水工作開場發言（只有中文）",
+        "url": "https://www.info.gov.hk/gia/general/202611/10/P2026111000417.htm",
+        "published_date": "2026-11-10",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/10c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "enforcement",
+        "is_urgent": false
+      },
+      {
+        "title": "立法會環境事務委員會參觀港燈智能營運及緊急應變中心（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202611/10/P2026111000547.htm",
+        "published_date": "2026-11-10",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/10c.htm",
+        "content_type": "policy_news",
+        "category": "policy",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "招標承投港珠澳大橋香港口岸鋪位租用權",
+        "url": "https://www.info.gov.hk/gia/general/202611/10/P2026110900591.htm",
+        "published_date": "2026-11-10",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/10c.htm",
+        "content_type": "policy_news",
+        "category": "immigration",
+        "subtopic": "border",
+        "is_urgent": false
+      },
+      {
         "title": "立法會將審議《北部都會區發展條例草案》",
         "url": "https://www.info.gov.hk/gia/general/202611/09/P2026110900539.htm",
         "published_date": "2026-11-09",
@@ -604,58 +652,10 @@
         "category": "policy",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "立法會：勞工及福利局局長就「貫徹『居家安老為本』，構建長者友善社區」議員議案總結發言（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202611/05/P2026110500425.htm",
-        "published_date": "2026-11-05",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/05c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會：勞工及福利局副局長就「貫徹『居家安老為本』，構建長者友善社區」議員議案開場發言（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202611/05/P2026110500265.htm",
-        "published_date": "2026-11-05",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/05c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會：創新科技及工業局副局長就「貫徹『居家安老為本』，構建長者友善社區」議員議案總結發言（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202611/05/P2026110500422.htm",
-        "published_date": "2026-11-05",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/05c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
-      },
-      {
-        "title": "創新科技及工業局常任秘書長出席香港2026浙江大學科技創新論壇致辭（只有中文）（附圖）",
-        "url": "https://www.info.gov.hk/gia/general/202611/05/P2026110500261.htm",
-        "published_date": "2026-11-05",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/05c.htm",
-        "content_type": "policy_news",
-        "category": "civil_service",
-        "subtopic": "",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-11-10"
+  "jobs_last_updated": "2026-11-11"
 }
