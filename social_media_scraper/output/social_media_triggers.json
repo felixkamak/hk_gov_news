@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-11-14",
+  "generated_date": "2026-11-15",
   "has_content": true,
   "content_suggestion": "A類：時效資訊帖",
   "summary": {
@@ -269,6 +269,30 @@
     ],
     "announcements": [],
     "policy_news": [
+      {
+        "title": "創新科技及工業局常任秘書長出席南京理工大學香港科創研究院揭牌儀式致辭（只有中文）（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202611/14/P2026111300380.htm",
+        "published_date": "2026-11-14",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/14c.htm",
+        "content_type": "policy_news",
+        "category": "civil_service",
+        "subtopic": "",
+        "is_urgent": false
+      },
+      {
+        "title": "保安局副局長勉勵警察學院結業學員「忠誠護國安　勇毅保家園」（附圖）",
+        "url": "https://www.info.gov.hk/gia/general/202611/14/P2026111400379.htm",
+        "published_date": "2026-11-14",
+        "summary": "",
+        "source_name": "政府新聞處",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/14c.htm",
+        "content_type": "policy_news",
+        "category": "security_law",
+        "subtopic": "",
+        "is_urgent": false
+      },
       {
         "title": "醫務衞生局副局長在立法會衞生事務委員會會議就向醫療衞生研究基金注資的建議開場發言（只有中文）",
         "url": "https://www.info.gov.hk/gia/general/202611/13/P2026111300340.htm",
@@ -544,34 +568,10 @@
         "category": "policy",
         "subtopic": "",
         "is_urgent": false
-      },
-      {
-        "title": "金管局與保監局聯合執法行動——保監局禁止林嘉傑申請保險中介人牌照九個月",
-        "url": "https://www.info.gov.hk/gia/general/202611/11/P2026111100252.htm",
-        "published_date": "2026-11-11",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/11c.htm",
-        "content_type": "policy_news",
-        "category": "immigration",
-        "subtopic": "enforcement",
-        "is_urgent": false
-      },
-      {
-        "title": "立法會：署理環境及生態局局長動議二讀《2026年野生動物保護（修訂）條例草案》發言全文（只有中文）",
-        "url": "https://www.info.gov.hk/gia/general/202611/11/P2026111100397.htm",
-        "published_date": "2026-11-11",
-        "summary": "",
-        "source_name": "政府新聞處",
-        "source_url": "https://www.info.gov.hk/gia/general/202611/11c.htm",
-        "content_type": "policy_news",
-        "category": "policy",
-        "subtopic": "",
-        "is_urgent": false
       }
     ],
     "source_updates": []
   },
   "jobs_fresh": true,
-  "jobs_last_updated": "2026-11-14"
+  "jobs_last_updated": "2026-11-15"
 }
